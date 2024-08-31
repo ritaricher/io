@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Humanity on Your Go-To Guide for Quality Products! Curated Online Shopping Discounts</title>
-    <link>https://999338.xyz/tags/humanity/</link>
+    <link>http://localhost:1313/tags/humanity/</link>
     <description>Recent content in Humanity on Your Go-To Guide for Quality Products! Curated Online Shopping Discounts</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Aug 2024 09:47:47 +0800</lastBuildDate>
-    <atom:link href="https://999338.xyz/tags/humanity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/humanity/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Reflecting on the Boundaries Between Artificial Intelligence, Androids, and Humanity</title>
-      <link>https://999338.xyz/posts/8b01/</link>
+      <title>github page设置报错，Unavailable for your site because your domain is not properly configured to support HTTPS</title>
+      <link>http://localhost:1313/posts/8b01/</link>
       <pubDate>Sun, 18 Aug 2024 09:47:47 +0800</pubDate>
-      <guid>https://999338.xyz/posts/8b01/</guid>
-      <description>Do Androids Dream of Electric Sheep? is a seminal science fiction novel by Philip K. Dick, published in 1968. Set in a post-apocalyptic world ravaged by nuclear war, the narrative explores profound themes of humanity, empathy, and the nature of consciousness through the lens of a dystopian future where androids, or &amp;ldquo;andys,&amp;rdquo; coexist with humans. This work has not only influenced the genre of science fiction but has also prompted philosophical inquiries into what it means to be human.</description>
+      <guid>http://localhost:1313/posts/8b01/</guid>
+      <description>Enforce HTTPS — Unavailable for your site because your domain is not properly configured to support HTTPS 如果您使用的是Cloudflare，则需要禁用其代理功能&#xA;Cloudflare默认启用其HTTP/DNS代理功能，这意味着GitHub无法查看生成HTTPS证书所需的DNS记录。您需要为指向GitHub的任何DNS记录禁用此功能。 免责声明禁用HTTP/DNS代理可能会干扰其他Cloudflare服务。 如果您在您的网站上使用其他Cloudflare服务，我们无法保证这些服务将继续工作。要获得更多帮助，我建议联系Cloudflare的支持团队。 首先，请确保您已根据我们的帮助文档中的说明在Cloudflare中设置了DNS记录 要禁用Cloudflare的DNS/HTTP代理，您需要登录到您的Cloudflare帐户，导航到您的域的DNS设置页面，然后单击与您的GitHub Pages域相关的任何DNS记录旁边的橙子云图标。 云图标应该变成灰色时，它的正确禁用。 配置证书后，您就可以通过选中“强制HTTPS”复选框来强制HTTPS。请记住，请求HTTPS证书可能需要一个小时左右的时间，所以如果您遵循这些步骤但仍然遇到问题，这通常就是原因。 如果您不确定如何解决这些SSL错误，请联系您的DNS提供商，或查看我们的自定义域故障排除指南。 </description>
     </item>
   </channel>
 </rss>
