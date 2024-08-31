@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>
+		body{font-family:Verdana,sans-serif;}
+		html {overflow-y: scroll}
+		:root { --bgcolor: white; --fontcolor: #0f0f0f; --linkcolor: #136ec2; --visitedcolor: #136ec2; --precolor: #fff; --prebgcolor: #088f6f;}
+		@media (prefers-color-scheme: dark) { :root { --bgcolor: black; --fontcolor: white; --linkcolor: #5bf; --visitedcolor: #ae5ee0; --precolor: #fff; --prebgcolor: #383838;}}
+		body{max-width:950px;margin:20px auto;padding:0 10px;font-size:21px;color:var(--fontcolor); background: white;line-height: 1.7;}
+		a:link{color: var(--linkcolor);}a:visited{color: var(--visitedcolor)}a:active{color: var(--visitedcolor)}a:hover{color: red;text-decoration:underline red;} h1,h2,h3,h4,h5,h6{line-height:1.2}
+		p > code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
+		code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
+		pre{color: var(--precolor); background: var(--prebgcolor); padding:24px; overflow-x: auto}
+		article{padding:10px 0}
+		.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}
+		figcaption {color: #888; font: 12px/1.5 monospace; text-align: center;}
+		figure {margin: auto}
+		img {display: block; max-width: 100%; height: auto; margin: auto}
+		body header nav{margin:1px 0px 40px 0px;}	
+		body header nav a{text-decoration: none;font-size: 15px;margin-right: 15px;}
+		body article blockquote{font-size: 17px;color: #735e5e;background-color: #cff2ac;padding-left: 5px;}
+		body main article h1 a{text-decoration: none;}
+		body main #articleid-index{margin:15px auto;}
+		body main #articleid-index #titleid-index a{text-decoration: none;}
+		body main #articleid-index #tagid-index a{font-size: 14px;color:#136dc28e;}
+		body footer p{font-size: 16px;}
+	
+	</style>
+	
+	<style type=text/css>
+		body main #articleid h1,h2,h3,h4,h5,h6{background-color: #81bbf569;padding-left: 8px; margin-left: 1px;border-radius: 4px;}
+		body main #articleid h1{border-inline-start: 5px solid #eb0341;}
+		body main #articleid h2{border-inline-start: 5px solid #f7275fd9;font-size: 26px;}
+		body main #articleid h3{border-inline-start: 4px solid #f707c7;margin-left: 4px;font-size: 23px;}
+		body main #articleid h4{border-inline-start: 4px solid #df54c3c5;margin-left: 6px;font-size: 20px;}
+		body main #articleid h5{border-inline-start: 3px solid #df54c367;margin-left: 8px;}
+		body main #articleid h6{border-inline-start: 3px solid #56a2e147;margin-left: 10px;}
+	</style>
+	
+	
+	<link rel="canonical" href="https://999338.xyz/posts/8b12/">
+	<title>Here are some essential dos and don&#39;ts for traveling in China - CGOD</title><meta name="description" content="Here are essential travel tips for visiting China, organized into must-do and must-not-do categories. These guidelines will help ensure a smooth and enjoyable experience while navigating the cultural and logistical aspects of traveling in China."><meta name="author" content="999338.xyz">
+
+    <link rel="shortcut icon" href="data:image/png;base64,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">            
+	
+	
+</head>
+<body>
+	<header>
+	
+	
+
+	
+	
+		<nav>
+				<a href="https://999338.xyz/">999338.xyz</a> 
+				
+				
+				
+				<a href="https://999338.xyz/posts/">Posts</a> 
+				
+				
+				<a href="https://999338.xyz/categories/">Categories</a> 
+				
+				
+				<a href="https://999338.xyz/tags/">Tags</a> 
+				
+		</nav>
+	
+	
+</header>
+
+	
+	<main>
+		<article id="articleid">
+			<h1>Here are some essential dos and don&#39;ts for traveling in China</h1>
+			
+		       
+		           <a href="https://999338.xyz/tags/travel-tips/" style="border:1px solid #0a739c;text-decoration: none;border-radius:5px;padding:2px 3px;background-color: white;font-size: 14px;">travel tips</a>
+        	       
+		           <a href="https://999338.xyz/tags/china/" style="border:1px solid #0a739c;text-decoration: none;border-radius:5px;padding:2px 3px;background-color: white;font-size: 14px;">china</a>
+        	       
+
+			<div>
+				<p>Here are essential travel tips for visiting China, organized into must-do and must-not-do categories. These guidelines will help ensure a smooth and enjoyable experience while navigating the cultural and logistical aspects of traveling in China.</p>
+<p><strong>Visa Requirements</strong></p>
+<p>Most travelers will need a visa to enter China. Apply for your visa well in advance, ideally 3 months before your trip, as it cannot be obtained at the border. Ensure your passport has at least 6 months of validity remaining from your planned date of return. Some countries like Austria, Belgium, France, Germany and others are eligible for a 15-day visa-free stay until December 2025.</p>
+<h2 id="span-stylebackground-color-ffff00must-do-tipsspan"><span style="background-color: #FFFF00;">Must-Do Tips</span></h2>
+<h3 id="1-use-the-right-power-plugs">1. Use the Right Power Plugs</h3>
+<p>China uses Type A, C, and I plugs with a standard voltage of 220V. Bring a plug converter and a power bank to keep your devices charged, as you&rsquo;ll rely on your phone for maps and translations.</p>
+<h3 id="2-embrace-mobile-payments">2. Embrace Mobile Payments</h3>
+<p>Download apps like Alipay and WeChat Pay, which are widely used for transactions. While some places accept credit cards, having a mobile payment option simplifies purchases.
+Mobile payments via apps like Alipay and WeChat Pay are ubiquitous in China. However, you&rsquo;ll need a Chinese bank account to use them. For travelers, carrying cash is essential. The exchange rate at airports is poor, so exchange money before your trip if possible.</p>
+<h3 id="3-learn-basic-mandarin-phrases">3. Learn Basic Mandarin Phrases</h3>
+<p>Familiarize yourself with a few phrases, such as &ldquo;thank you&rdquo; (xièxiè) or &ldquo;hello&rdquo; (nihao) and addressing workers as &ldquo;Shifu&rdquo; (师傅). This shows respect and can enhance your interactions.</p>
+<h3 id="4-download-useful-apps">4. Download Useful Apps</h3>
+<p>Many popular websites and apps like Google, Facebook, and Instagram are blocked in China.</p>
+<ul>
+<li>Get aVPN. You can either purchase a paid VPN service like Express VPN or Nord VPN or you can get free Opera VPN which works fine there.</li>
+</ul>
+<blockquote>
+<p>Express VPN <a href="https://www.expressvpn.com/">https://www.expressvpn.com/</a></p>
+</blockquote>
+<blockquote>
+<p>Nord VPN <a href="https://nordvpn.com">https://nordvpn.com</a></p>
+</blockquote>
+<ul>
+<li>Pleco Chinese Dictionary for translations.</li>
+<li>WeChat is the most popular messaging and social media app in China.</li>
+<li>DIDI (taxi-hailing or online taxi-hailing)</li>
+<li>Alipay (pay or take the subway, BUS, or even some other means of transportation)</li>
+<li>Trip (book a hotel)</li>
+</ul>
+<blockquote>
+<p>Trip APP <a href="https://www.trip.com/">https://www.trip.com/</a></p>
+</blockquote>
+<ul>
+<li>Baidu Maps (In China, it is more useful than google maps)</li>
+</ul>
+<h3 id="5-be-adventurous-with-food">5. Be Adventurous with Food</h3>
+<p>Try local street food and regional specialties, but choose busy stalls with high turnover for better hygiene. Be cautious with food choices if you have dietary restrictions, as many dishes may contain meat.</p>
+<h3 id="6-dress-modestly-at-religious-sites">6. Dress Modestly at Religious Sites</h3>
+<p>When visiting temples or other sacred places, ensure you dress respectfully. Check for photography restrictions before taking pictures.</p>
+<h3 id="7-stay-hydrated-safely">7. Stay Hydrated Safely</h3>
+<p>Always opt for bottled water, as tap water is not safe to drink. Popular brands like Nongfu Spring (农夫山泉) are easily available.</p>
+<h3 id="8-plan-for-connectivity">8. Plan for Connectivity</h3>
+<p>Get a local SIM card or an international data plan to stay connected while traveling. This will help with navigation and communication.</p>
+<h3 id="9-respect-local-customs">9. Respect Local Customs</h3>
+<p>Be mindful of cultural norms, such as queuing properly and avoiding showing the soles of your feet, which can be considered impolite.</p>
+<h3 id="10-carry-copies-of-important-documents">10. Carry Copies of Important Documents</h3>
+<p>Keep a photocopy of your passport and visa with you, as some places may require you to show your passport for entry.</p>
+<h3 id="11-write-down-addresses">11. Write Down Addresses</h3>
+<p>Always have your hotel’s address written down in Chinese characters. This is crucial for navigating and asking for directions if you get lost.</p>
+<h3 id="12-use-public-transportation">12. Use Public Transportation</h3>
+<p>China has a vast and efficient public transportation system, including high-speed trains and metro networks. Familiarize yourself with the local transit options for easier travel.</p>
+<h3 id="13-pack-essentials">13. Pack Essentials</h3>
+<p>Bring toilet paper, hand sanitizer, and snacks, especially if you have dietary restrictions. These items may not be readily available in all areas.</p>
+<h3 id="14-be-aware-of-air-quality">14. Be Aware of Air Quality</h3>
+<p>Check the air quality index before engaging in outdoor activities, especially in cities like Beijing, where pollution can be significant.</p>
+<h2 id="span-stylebackground-color-ffff00must-not-do-tipsspan"><span style="background-color: #FFFF00;">Must-Not Do Tips</span></h2>
+<h3 id="1-do-not-tip">1. Do Not Tip</h3>
+<p>Tipping is not customary in China and can be seen as rude in some contexts. Express gratitude verbally instead.</p>
+<h3 id="2-avoid-drinking-tap-water">2. Avoid Drinking Tap Water</h3>
+<p>Tap water is generally unsafe to drink. Stick to bottled water for your hydration needs.</p>
+<h3 id="3-do-not-use-your-phone-inappropriately">3. Do Not Use Your Phone Inappropriately</h3>
+<p>Avoid using your phone in a way that may be considered disrespectful, such as during meals or in quiet public spaces.</p>
+<h3 id="4-dont-expect-widespread-english">4. Don’t Expect Widespread English</h3>
+<p>English is not commonly spoken outside major tourist areas. Be prepared to navigate with basic Mandarin or translation apps.</p>
+<h3 id="5-avoid-public-displays-of-affection">5. Avoid Public Displays of Affection</h3>
+<p>While holding hands is generally acceptable, more intimate displays may attract unwanted attention.</p>
+<h3 id="6-do-not-ignore-air-quality">6. Do Not Ignore Air Quality</h3>
+<p>Be aware of air pollution, especially in major cities. Carry a mask if necessary.</p>
+<h3 id="7-avoid-peak-travel-times">7. Avoid Peak Travel Times</h3>
+<p>Traveling during major holidays like Chinese New Year or National Day can lead to overcrowding and difficulty booking transportation.</p>
+<h3 id="8-dont-stick-chopsticks-upright-in-rice">8. Don’t Stick Chopsticks Upright in Rice</h3>
+<p>This resembles incense sticks used in funerals and is considered very disrespectful.</p>
+<h3 id="9-avoid-disrespecting-local-customs">9. Avoid Disrespecting Local Customs</h3>
+<p>Be aware of cultural norms, such as the importance of queuing and respecting personal space.</p>
+<h3 id="10-dont-engage-in-political-discussions">10. Don’t Engage in Political Discussions</h3>
+<p>Avoid discussing politically sensitive subjects, as they can lead to awkward conversations and discomfort.</p>
+<h3 id="11-dont-expect-immediate-service">11. Don’t Expect Immediate Service</h3>
+<p>Service in restaurants and shops may not be as prompt as in Western countries. Patience is key.</p>
+<h3 id="12-avoid-overpacking">12. Avoid Overpacking</h3>
+<p>China has a wide range of clothing and essentials available, so don&rsquo;t overpack. Bring only what you need.</p>
+<h3 id="13-dont-be-alarmed-by-spitting">13. Don’t Be Alarmed by Spitting</h3>
+<p>Spitting in public is common in China, though it may be considered rude in other cultures. Try not to take it personally.</p>
+<h3 id="14-avoid-traveling-alone-in-remote-areas">14. Avoid Traveling Alone in Remote Areas</h3>
+<p>While China is generally safe, it&rsquo;s advisable to travel with a companion in less populated areas.</p>
+<h3 id="15-dont-forget-to-enjoy-yourself">15. Don’t Forget to Enjoy Yourself</h3>
+<p>Amidst the challenges, remember to appreciate the beauty and diversity of China. Engage with locals and immerse yourself in the culture.</p>
+<p><strong>Best Time to Visit</strong></p>
+<p>Spring (April-May) and autumn (September-October) are generally the best times to visit China. The weather is comfortable and the crowds are smaller compared to peak summer. However, China is suitable for travel year-round. Avoid traveling during major holidays like Chinese New Year (late January to mid-February) and National Day Golden Week (October 1-7) when crowds are massive and transportation is crowded.</p>
+<p>By following these dos and don&rsquo;ts, you can enhance your travel experience in China, ensuring a respectful and enjoyable visit. Safe travels!</p>
+
+			</div>
+		</article>
+	</main>
+<aside>
+	<div>
+		<div>
+			<strong>LATEST POSTS</strong>
+		</div>
+		<div>
+			<ul>
+				
+				
+				<li><a href="https://999338.xyz/posts/8b12/">Here are some essential dos and don&#39;ts for traveling in China</a></li>
+				
+				
+				<li><a href="https://999338.xyz/posts/8b11/">Guizhou Travel |A Paradise for Hikers and a Journey into Ethnic Diversity|Independent Travel</a></li>
+				
+				
+				<li><a href="https://999338.xyz/posts/8b10/">Travel Guide: The 10 Most Beautiful Border Cities in China! Experience Unique Ethnic Characteristics</a></li>
+				
+				
+				<li><a href="https://999338.xyz/posts/8b09/">Old Town Traveler&#39;s Guide|Top 50 Ancient City Worth Visiting in China</a></li>
+				
+				
+				<li><a href="https://999338.xyz/posts/8b08/">Exploring the Allure of Beijing&#39;s Historic Hutongs|Tourist Attractions for Foreign Visitors</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</aside>
+
+
+	<footer>
+	<p>&copy; 2024 &nbsp;<a href="https://999338.xyz/">999338.xyz</a>&nbsp;
+	<a href="https://999338.xyz/sitemap.xml">sitemap</a>
+	
+	
+			
+	
+	</p>
+</footer>
+
+</body>
+
+<script type="text/javascript">
+
+function editA(){
+var aN = document.getElementById('articleid').getElementsByTagName("a");
+console.log(aN);
+for(var i =0; i < aN.length; i++){
+aN[i].target ="_blank"; 
+}}
+editA();
+</script>
+
+</html>

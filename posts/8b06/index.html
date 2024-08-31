@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>
+		body{font-family:Verdana,sans-serif;}
+		html {overflow-y: scroll}
+		:root { --bgcolor: white; --fontcolor: #0f0f0f; --linkcolor: #136ec2; --visitedcolor: #136ec2; --precolor: #fff; --prebgcolor: #088f6f;}
+		@media (prefers-color-scheme: dark) { :root { --bgcolor: black; --fontcolor: white; --linkcolor: #5bf; --visitedcolor: #ae5ee0; --precolor: #fff; --prebgcolor: #383838;}}
+		body{max-width:950px;margin:20px auto;padding:0 10px;font-size:21px;color:var(--fontcolor); background: white;line-height: 1.7;}
+		a:link{color: var(--linkcolor);}a:visited{color: var(--visitedcolor)}a:active{color: var(--visitedcolor)}a:hover{color: red;text-decoration:underline red;} h1,h2,h3,h4,h5,h6{line-height:1.2}
+		p > code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
+		code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
+		pre{color: var(--precolor); background: var(--prebgcolor); padding:24px; overflow-x: auto}
+		article{padding:10px 0}
+		.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}
+		figcaption {color: #888; font: 12px/1.5 monospace; text-align: center;}
+		figure {margin: auto}
+		img {display: block; max-width: 100%; height: auto; margin: auto}
+		body header nav{margin:1px 0px 40px 0px;}	
+		body header nav a{text-decoration: none;font-size: 15px;margin-right: 15px;}
+		body article blockquote{font-size: 17px;color: #735e5e;background-color: #cff2ac;padding-left: 5px;}
+		body main article h1 a{text-decoration: none;}
+		body main #articleid-index{margin:15px auto;}
+		body main #articleid-index #titleid-index a{text-decoration: none;}
+		body main #articleid-index #tagid-index a{font-size: 14px;color:#136dc28e;}
+		body footer p{font-size: 16px;}
+	
+	</style>
+	
+	<style type=text/css>
+		body main #articleid h1,h2,h3,h4,h5,h6{background-color: #81bbf569;padding-left: 8px; margin-left: 1px;border-radius: 4px;}
+		body main #articleid h1{border-inline-start: 5px solid #eb0341;}
+		body main #articleid h2{border-inline-start: 5px solid #f7275fd9;font-size: 26px;}
+		body main #articleid h3{border-inline-start: 4px solid #f707c7;margin-left: 4px;font-size: 23px;}
+		body main #articleid h4{border-inline-start: 4px solid #df54c3c5;margin-left: 6px;font-size: 20px;}
+		body main #articleid h5{border-inline-start: 3px solid #df54c367;margin-left: 8px;}
+		body main #articleid h6{border-inline-start: 3px solid #56a2e147;margin-left: 10px;}
+	</style>
+	
+	
+	<link rel="canonical" href="https://999338.xyz/posts/8b06/">
+	<title>The Scenic Route: A Self-Driving Adventure on the 318 Sichuan|Tibet Line - CGOD</title><meta name="description" content="China&#39;s Sichuan-Tibet Highway 318 is a popular and classic self-driving route, favored by many adventurers.As it winds westward, it crosses Erlang Mountain and is renowned as &#39;China&#39;s Scenic Avenue&#39;.This route has relatively lower altitudes and offers a diverse landscape, from driving alongside rivers in deep valleys to racing across grasslands and navigating winding mountain roads. The scenery changes frequently, ensuring you won&#39;t experience &#39;aesthetic fatigue.&#39;"><meta name="author" content="999338.xyz">
+
+    <link rel="shortcut icon" href="data:image/png;base64,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">            
+	
+	
+</head>
+<body>
+	<header>
+	
+	
+
+	
+	
+		<nav>
+				<a href="https://999338.xyz/">999338.xyz</a> 
+				
+				
+				
+				<a href="https://999338.xyz/posts/">Posts</a> 
+				
+				
+				<a href="https://999338.xyz/categories/">Categories</a> 
+				
+				
+				<a href="https://999338.xyz/tags/">Tags</a> 
+				
+		</nav>
+	
+	
+</header>
+
+	
+	<main>
+		<article id="articleid">
+			<h1>The Scenic Route: A Self-Driving Adventure on the 318 Sichuan|Tibet Line</h1>
+			
+		       
+		           <a href="https://999338.xyz/tags/journey/" style="border:1px solid #0a739c;text-decoration: none;border-radius:5px;padding:2px 3px;background-color: white;font-size: 14px;">journey</a>
+        	       
+		           <a href="https://999338.xyz/tags/travelers-guide/" style="border:1px solid #0a739c;text-decoration: none;border-radius:5px;padding:2px 3px;background-color: white;font-size: 14px;">traveler&#39;s guide</a>
+        	       
+		           <a href="https://999338.xyz/tags/self-driving/" style="border:1px solid #0a739c;text-decoration: none;border-radius:5px;padding:2px 3px;background-color: white;font-size: 14px;">self-driving</a>
+        	       
+		           <a href="https://999338.xyz/tags/lhasa/" style="border:1px solid #0a739c;text-decoration: none;border-radius:5px;padding:2px 3px;background-color: white;font-size: 14px;">Lhasa</a>
+        	       
+		           <a href="https://999338.xyz/tags/trip/" style="border:1px solid #0a739c;text-decoration: none;border-radius:5px;padding:2px 3px;background-color: white;font-size: 14px;">trip</a>
+        	       
+
+			<div>
+				<p>China&rsquo;s <span style="background-color: #FFFF00;"><strong>Sichuan-Tibet Highway 318</strong></span> is a popular and classic self-driving route, favored by many adventurers. It typically refers to the section of National Highway 318 from Chengdu to Lhasa, covering about 2,000 kilometers. The southern Sichuan-Tibet line, located along the 30th parallel north, begins at Ya&rsquo;an and diverges from National Highway 108. As it winds westward, it crosses Erlang Mountain and is renowned as &ldquo;China&rsquo;s Scenic Avenue.&rdquo;</p>
+<p>For a self-driving trip to Lhasa, it is recommended to start from Chengdu and pass through Luding—Kangding—Xinduqiao—Yajiang—Litang—Batang—Zuogong—Basu—Ranwu—Bomi—Motuo—Nyingchi, and finally reach Lhasa, the capital of Tibet. This route has relatively lower altitudes and offers a diverse landscape, from driving alongside rivers in deep valleys to racing across grasslands and navigating winding mountain roads. The scenery changes frequently, ensuring you won&rsquo;t experience &ldquo;aesthetic fatigue.&rdquo;</p>
+<p>However, the altitude along this route varies greatly, gradually increasing from around 2,000 meters to over 4,000 meters. To help your body gradually adapt to the plateau environment, you can take a few days to explore at your own pace, stopping whenever you wish.</p>
+<p><strong>Hailuogou</strong> —Driving along the Sichuan-Tibet route, you&rsquo;re bound to encounter unforgettable landscapes. Hailuogou can be the first overnight stop (about 320 kilometers from Chengdu, approximately a 6-hour drive). The next morning, you can ascend the mountain to view the Hailuogou Glacier, one of the few remaining low-altitude glaciers in the world, and the lowest-altitude glacier in Asia, located close to a city.</p>
+<p><strong>Sunlit Golden Mountain</strong> —Hailuogou is located within the Gongga Mountain Scenic Area. At sunrise, the continuous snow peaks are bathed in a layer of brilliant golden light—this is the famous Sunlit Golden Mountain of Hailuogou. The altitude difference within the Hailuogou valley is around 6,000 meters, with over 2,500 species of wild plants ranging from subtropical to alpine climates.</p>
+<p>As you slowly travel along the mountain roads, you can clearly observe the ever-changing plant life around you. From palm trees in the valleys and lush bamboo forests to towering ancient trees in the primeval forest, and colorful wildflowers and lichens at higher altitudes, the scenery is endlessly captivating.</p>
+<p>Afterward, continue your journey towards Yajiang, passing through Luding Bridge, the First Bridge of the Sichuan-Tibet Highway, Kangding, Zheduo Mountain, and Xinduqiao before reaching Yajiang (about 247 kilometers from Hailuogou, typically a 6-hour drive). After resting, you can head to Batang County, passing through Jianziwan, Kazila Mountain, Litang County, Maoya Grassland, and Haizi Mountain before arriving in Batang County (276 kilometers from Yajiang, Batang&rsquo;s altitude is 2,700 meters).</p>
+<p><strong>Ranwu Lake</strong> —Around the fourth day of the self-driving trip, you&rsquo;ll truly enter Tibet. After gradually acclimating during the previous days, your body should be more &ldquo;in harmony&rdquo; with the plateau environment. Then, continue your journey through Mangkam and Hongla Mountain to reach Zuogong, at an altitude of 3,759 meters. Here, avoid strenuous activities or bathing, and if you feel uncomfortable, immediately replenish with glucose water and oxygen.</p>
+<p>Once you feel more adjusted to the altitude, set off again from Zuogong, passing through Dongda Mountain, the 99 Bends, Bangda, and Basu before reaching Ranwu (about 290 kilometers, with an altitude of 3,847 meters). Ranwu Lake, located along the Sichuan-Tibet Highway, was formed by landslides or mudslides blocking the river. The lake is mainly fed by melting snow from the surrounding mountains, resulting in pristine, clear blue waters with little debris. The scenery around the lake varies, with lush meadows along the shores, set against the high-saturation blue water and snow-capped peaks, creating a picturesque view.</p>
+<p><strong>Peach Blossom Valley</strong> —Continue driving for about 30 kilometers, and you&rsquo;ll find Midui Glacier on the left side of the road. The last stretch of the journey through Nyingchi’s Peach Blossom Valley starts from Bomi and passes through Nyingchi (about 222 kilometers from Bomi, or about 362 kilometers from Motuo). This is the perfect time to visit Peach Blossom Valley. There is a narrow but flat cement road leading north from the Kada Bridge, deep into the valley where you&rsquo;ll find an area called Peach Blossom Valley. The further you go, the more abundant the ancient wild peach trees become. The peach blossoms here are a delicate pink tinged with white.</p>
+<p>At the far end of the &ldquo;Ten Miles of Peach Blossom Valley&rdquo; lies Qingduo Town, where the Parlung Tsangpo River cuts through the town, making it even more secluded. The town is home to Qingduo Monastery, also known as Qingduo Jampa Ling Monastery. This Gelug monastery was founded by Rebchi Tukje Zangpo in 1430, and Emperor Guangxu once bestowed a plaque and couplets on the monastery. Time seems to move slowly here, with each falling peach blossom marking the passage of time.</p>
+<p><strong>Lhasa</strong> —The final destination is Lhasa, at an altitude of 3,650 meters. Besides the Potala Palace and Jokhang Temple, you can visit Mount Everest, Yamdrok Lake (Yamdrok Yumtso), and Shengtianmen depending on your time and preferences. The beauty of a self-driving tour is that you can fully follow your heart’s desires, stopping and exploring as you wish.</p>
+<p>China&rsquo;s land area covers 9.6 million square kilometers, with Tibet accounting for about one-eighth of the total. If we never venture out, we cannot truly appreciate its vastness and beauty.</p>
+
+			</div>
+		</article>
+	</main>
+<aside>
+	<div>
+		<div>
+			<strong>LATEST POSTS</strong>
+		</div>
+		<div>
+			<ul>
+				
+				
+				<li><a href="https://999338.xyz/posts/8b12/">Here are some essential dos and don&#39;ts for traveling in China</a></li>
+				
+				
+				<li><a href="https://999338.xyz/posts/8b11/">Guizhou Travel |A Paradise for Hikers and a Journey into Ethnic Diversity|Independent Travel</a></li>
+				
+				
+				<li><a href="https://999338.xyz/posts/8b10/">Travel Guide: The 10 Most Beautiful Border Cities in China! Experience Unique Ethnic Characteristics</a></li>
+				
+				
+				<li><a href="https://999338.xyz/posts/8b09/">Old Town Traveler&#39;s Guide|Top 50 Ancient City Worth Visiting in China</a></li>
+				
+				
+				<li><a href="https://999338.xyz/posts/8b08/">Exploring the Allure of Beijing&#39;s Historic Hutongs|Tourist Attractions for Foreign Visitors</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</aside>
+
+
+	<footer>
+	<p>&copy; 2024 &nbsp;<a href="https://999338.xyz/">999338.xyz</a>&nbsp;
+	<a href="https://999338.xyz/sitemap.xml">sitemap</a>
+	
+	
+			
+	
+	</p>
+</footer>
+
+</body>
+
+<script type="text/javascript">
+
+function editA(){
+var aN = document.getElementById('articleid').getElementsByTagName("a");
+console.log(aN);
+for(var i =0; i < aN.length; i++){
+aN[i].target ="_blank"; 
+}}
+editA();
+</script>
+
+</html>
