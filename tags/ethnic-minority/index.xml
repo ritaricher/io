@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ethnic Minority on 个人博客</title>
-    <link>https://999338.xyz/tags/ethnic-minority/</link>
+    <link>http://localhost:1313/tags/ethnic-minority/</link>
     <description>Recent content in Ethnic Minority on 个人博客</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 23 Aug 2024 22:56:51 +0800</lastBuildDate>
-    <atom:link href="https://999338.xyz/tags/ethnic-minority/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ethnic-minority/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Travel Guide: The 10 Most Beautiful Border Cities in China! Experience Unique Ethnic Characteristics</title>
-      <link>https://999338.xyz/posts/8b10/</link>
+      <link>http://localhost:1313/posts/8b10/</link>
       <pubDate>Fri, 23 Aug 2024 22:56:51 +0800</pubDate>
-      <guid>https://999338.xyz/posts/8b10/</guid>
+      <guid>http://localhost:1313/posts/8b10/</guid>
       <description>The 10 Most Beautiful Border Cities in China! 1. Manzhouli (Inner Mongolia) - The Window of East Asia Located in the western part of Hulunbuir, Inner Mongolia, Manzhouli is a border city brimming with exotic charm. Bordering Russia to the north, this city blends the cultures of China, Russia, and Mongolia. Manzhouli&amp;rsquo;s architecture is unique, combining European, Chinese, and Russian styles, creating a bustling and picturesque atmosphere. Walking through the streets feels like stepping into a fairytale world full of mystery.</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hikers on 个人博客</title>
-    <link>https://999338.xyz/tags/hikers/</link>
+    <link>http://localhost:1313/tags/hikers/</link>
     <description>Recent content in Hikers on 个人博客</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 24 Aug 2024 00:50:19 +0800</lastBuildDate>
-    <atom:link href="https://999338.xyz/tags/hikers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hikers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Guizhou Travel |A Paradise for Hikers and a Journey into Ethnic Diversity|Independent Travel</title>
-      <link>https://999338.xyz/posts/8b11/</link>
+      <link>http://localhost:1313/posts/8b11/</link>
       <pubDate>Sat, 24 Aug 2024 00:50:19 +0800</pubDate>
-      <guid>https://999338.xyz/posts/8b11/</guid>
+      <guid>http://localhost:1313/posts/8b11/</guid>
       <description>Guizhou Province has long been known for its &amp;ldquo;ethnic charm,&amp;rdquo; but few have truly ventured deep into southeastern Guizhou. Most people may recognize &amp;ldquo;Xijiang Qianhu Miao Village,&amp;rdquo; a highly renowned village. While Xijiang is indeed an impressive village, the over-commercialization of this tourist spot has somewhat diminished its former tranquility.&#xA;Today, let&amp;rsquo;s delve into Liping, Congjiang, and Rongjiang, to explore this colorful land and experience its true primitive and mysterious charm.</description>
     </item>
   </channel>
