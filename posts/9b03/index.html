@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>
+		body{font-family:Verdana,sans-serif;}
+		html {overflow-y: scroll}
+		:root { --bgcolor: white; --fontcolor: #0f0f0f; --linkcolor: #136ec2; --visitedcolor: #136ec2; --precolor: #fff; --prebgcolor: #088f6f;}
+		@media (prefers-color-scheme: dark) { :root { --bgcolor: black; --fontcolor: white; --linkcolor: #5bf; --visitedcolor: #ae5ee0; --precolor: #fff; --prebgcolor: #383838;}}
+		body{max-width:950px;margin:20px auto;padding:0 10px;font-size:21px;color:var(--fontcolor); background: white;line-height: 1.7;}
+		a:link{color: var(--linkcolor);}a:visited{color: var(--visitedcolor)}a:active{color: var(--visitedcolor)}a:hover{color: red;text-decoration:underline red;} h1,h2,h3,h4,h5,h6{line-height:1.2}
+		p > code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
+		code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
+		pre{color: var(--precolor); background: var(--prebgcolor); padding:24px; overflow-x: auto}
+		article{padding:10px 0}
+		.center {display: block;margin-left: auto;margin-right: auto;width: 100%;}
+		figcaption {color: #888; font: 12px/1.5 monospace; text-align: center;}
+		figure {margin: auto}
+		img {display: block; max-width: 100%; height: auto; margin: auto}
+		body header nav{margin:1px 0px 40px 0px;}	
+		body header nav a{text-decoration: none;font-size: 15px;margin-right: 15px;}
+		body article blockquote{font-size: 17px;color: #735e5e;background-color: #cff2ac;padding-left: 5px;margin-left: 15px;}
+		body main article h1 a{text-decoration: none;}
+		body main #articleid-index{margin:15px auto;}
+		body main #articleid-index #titleid-index a{text-decoration: none;}
+		body main #articleid-index #tagid-index a{font-size: 14px;color:#136dc28e;}
+		body footer p{font-size: 16px;}
+	
+		table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  display: block;
+  overflow-x: auto;
+}
+thead {
+  background-color: #f6f8fa;
+}
+tr {
+  border-top: 1px solid #dfe2e5;
+}
+td, th {
+  border: 1px solid #cdd0d3;
+  padding: .6em 1em;
+}
+
+
+	</style>
+	
+	<style type=text/css>
+		body main #articleid h1,h2,h3,h4,h5,h6{background-color: #a3ccf54d;padding-left: 8px; margin-left: 1px;border-radius: 4px;}
+		body main #articleid h2{border-inline-start: 5px solid #f7275fd9;font-size: 26px;}
+		body main #articleid h3{border-inline-start: 4px solid #f707c7;margin-left: 4px;font-size: 23px;color: #3a3434;}
+		body main #articleid h4{border-inline-start: 4px solid #df54c3c5;margin-left: 6px;font-size: 20px;color: #3a3434;}
+		body main #articleid h5{border-inline-start: 3px solid #df54c367;margin-left: 8px;color: #3a3434;}
+		body main #articleid h6{border-inline-start: 3px solid #56a2e147;margin-left: 10px;color: #3a3434;}
+		body main #contentid{font-size: 20px;}
+	</style>
+	
+	
+	<link rel="canonical" href="https://999338.xyz/posts/9b03/">
+	<title>net域名价格列表对比，net域名注册和续费是多少钱人民币</title><meta name="description" content="net域名的价格大致在80元到200元之间。SpaceShip最低价格是80元每年。net是“网络network”的缩写，它是继com、ru和org之后第四大最受欢迎的顶级域名。如果注册商提供了增值服务（如域名隐私保护、域名转移等），这些也可能会增加域名的价格。"><meta name="author" content="999338.xyz">
+
+    <link rel="shortcut icon" href="data:image/png;base64,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">            
+	
+	
+	
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JBD9FLP6G8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JBD9FLP6G8');
+</script>
+
+</head>
+<body>
+	<header>
+	
+	
+
+	
+	
+		<nav>
+				<a href="https://999338.xyz/">999338.xyz</a> 
+				
+				
+				
+				<a href="https://999338.xyz/posts/">Posts</a> 
+				
+				
+				<a href="https://999338.xyz/categories/">Categories</a> 
+				
+				
+				<a href="https://999338.xyz/tags/">Tags</a> 
+				
+		</nav>
+	
+	
+</header>
+
+	
+	<main>
+		<article id="articleid">
+			<h1>net域名价格列表对比，net域名注册和续费是多少钱人民币</h1>
+			
+		       
+		           <a href="https://999338.xyz/tags/%E5%9F%9F%E5%90%8D/" style="border:1px solid #0a739c;text-decoration: none;border-radius:5px;padding:2px 3px;background-color: white;font-size: 14px;">域名</a>
+        	       
+
+			<div id="contentid">
+				<p>net是“网络network”的缩写。net域名是顶级域名，全球通用不受地域限制。net域名因其简短、易记且含义明确，在网民中具有很高的可识别性。截至2021年，它是继com、ru和org之后第四大最受欢迎的顶级域名。</p>
+<p><span style="background-color: #FFFF00;">net域名的价格大致在每年80元到200元之间。</span></p>
+<p>例如，<a href="https://wanwang.aliyun.com/domain">阿里云</a>在2024年2月1日起对.net域名进行了价格调整，首年注册费用为93元，续费费用为99元，转入费用为90元。</p>
+<p>如果注册商提供了增值服务（如域名隐私保护、域名转移等），这些也可能会增加域名的价格。</p>
+<h2 id="一net域名价格列表对比-2024年9月">一、net域名价格列表对比 2024年9月</h2>
+<style type=text/css>
+body main #contentid table{font-size:17px;}
+</style>
+<table>
+<thead>
+<tr>
+<th>平台商</th>
+<th>首年</th>
+<th>次年</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://wanwang.aliyun.com/domain">阿里云</a></td>
+<td>93元</td>
+<td>99元</td>
+<td>需要备案</td>
+</tr>
+<tr>
+<td><a href="https://dnspod.cloud.tencent.com/">腾讯云</a></td>
+<td>90元</td>
+<td>95元</td>
+<td>需要备案</td>
+</tr>
+<tr>
+<td><a href="https://www.spaceship.com/">SpaceShip</a></td>
+<td><font color="red">80元</font></td>
+<td><font color="red">80元</font></td>
+<td>免费WHOIS隐私，免费CDN加速</td>
+</tr>
+<tr>
+<td><a href="https://www.cloudflare.com/zh-cn/products/registrar/">Cloudflare</a></td>
+<td><font color="red">84元</font></td>
+<td><font color="red">84元</font></td>
+<td>免费WHOIS隐私，免费CDN加速和SSL，DNS服务器不可改</td>
+</tr>
+<tr>
+<td><a href="https://www.namecheap.com/">Namecheap</a></td>
+<td>92元</td>
+<td>114元</td>
+<td>免费WHOIS隐私，免费CDN加速，第一年送SSL</td>
+</tr>
+<tr>
+<td><a href="https://www.godaddy.com/zh-sg">Godaddy</a></td>
+<td>109元</td>
+<td>179元</td>
+<td>免费WHOIS隐私，续费较高</td>
+</tr>
+<tr>
+<td><a href="https://www.namesilo.com/">Namesilo</a></td>
+<td>113元</td>
+<td>113元</td>
+<td>免费WHOIS隐私，可改DNS服务器</td>
+</tr>
+<tr>
+<td><a href="https://www.dynadot.cn/zh/">Dynadot</a></td>
+<td>99元</td>
+<td>99元</td>
+<td>免费WHOIS隐私</td>
+</tr>
+<tr>
+<td><a href="https://www.west.cn/">西部数码</a></td>
+<td>89元</td>
+<td>98元</td>
+<td>需要备案</td>
+</tr>
+</tbody>
+</table>
+<p>注意：</p>
+<p>Cloudflare修改DNS服务器需要收费。</p>
+<p>在国外平台注册，需要有一定英语基础。</p>
+<p>在国内平台注册，需要备案和实名认证。</p>
+<br/>
+<h2 id="二免费的二级域名">二、免费的二级域名</h2>
+<p>免费的二级域名如下，各位可以自行搜索并申请</p>
+<blockquote>
+<p>eu.org、nom.za、pp.ua、cloudns.org、cloudns.be、cloudns.ch、publicvm.com 、run.place</p>
+</blockquote>
+<blockquote>
+<p>us.kg、freenom、dot.tk、biz.nf、infinityfree、000webhost、duckdns.org、freedns.afraid.org</p>
+</blockquote>
+<p>注意：免费二级域名可能会存在不稳定的情况，如频繁宕机、访问缓慢、被平台收回等问题。</p>
+<br/>
+<h2 id="三便宜的顶级域名">三、便宜的顶级域名</h2>
+<table>
+<thead>
+<tr>
+<th>域名</th>
+<th>平台</th>
+<th>首年</th>
+<th>次年</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xyz（6位数字）</td>
+<td><a href="https://www.spaceship.com/">SpaceShip</a></td>
+<td><font color="red">4.8元</font></td>
+<td><font color="red">4.8元</font></td>
+</tr>
+<tr>
+<td>top</td>
+<td><a href="https://www.spaceship.com/">SpaceShip</a></td>
+<td>7.5元</td>
+<td>27元</td>
+</tr>
+<tr>
+<td>vip</td>
+<td><a href="https://www.spaceship.com/">SpaceShip</a></td>
+<td>25.6元</td>
+<td>33元</td>
+</tr>
+<tr>
+<td>cn</td>
+<td><a href="https://wanwang.aliyun.com/domain">阿里云</a></td>
+<td>29元</td>
+<td>35元</td>
+</tr>
+</tbody>
+</table>
+<p><strong>备注：</strong></p>
+<p>1、xyz后缀数字域名，6-9位数字，在spaceship注册十年价格是48元。</p>
+<p>2、阿里云的.top、‌.fun、‌.site、.space、.online 、.store、.tech、.website、.host、.press等后缀的域名，十年价格均为188元。‌</p>
+<br/>
+<h2 id="四影响域名价格的6个因素">四、影响域名价格的6个因素</h2>
+<h3 id="1域名后缀名">1、域名后缀名</h3>
+<p>部分顶级域名是可以通用的，包括诸如“.com”、”.org”、”.net”、”.info”和“. biz”等后缀名。</p>
+<p>但有些与特定国家和地区有关，例如“.us”代表美国，“.uk”代表英国，“.ca”代表加拿大，“.de”代表德国。</p>
+<p>常见的顶级域名，如“.com”，”.net”和“.org”，由于其受欢迎程度和熟悉程度，通常价格较高。</p>
+<h3 id="2续费和合同期限">2、续费和合同期限</h3>
+<p>有些域名注册商会在第一年免费或者打很低的折扣，续费价格往往比第一年注册费更贵。</p>
+<h3 id="3域名注册商">3、域名注册商</h3>
+<p>域名注册商的定价会根据服务而有所不同，包括注册费、续期费和转让费。大多数域名注册商还提供附加服务，例如包括域隐私保护、电子邮件托管、网站建设、SSL证书、虚拟专用服务器托管、DNS（域名系统）等。这些附加服务往往需要额外付费。</p>
+<h3 id="4优质域名">4、优质域名</h3>
+<p>优质域名通常比普通域名更贵。它们被认为更有价值，有多种因素包括长度，关键字，可记忆性，高流量潜力和品牌。某些优质域名有产生大量网络流量的历史，还可能包含与特定行业、产品或服务相关的热门关键字或短语。</p>
+<h3 id="5域名转让">5、域名转让</h3>
+<p>如果您想将您的域名转移或者转让，有可能会收取服务费。这些会增加管理域名的成本。</p>
+<h3 id="6隐私和保护成本">6、隐私和保护成本</h3>
+<p>隐私保护服务为域名持有者增加了一层额外的安全性和匿名性，但通常会增加域名成本。</p>
+<br/>
+<h2 id="五为了避免踩坑你需要注意的事项">五、为了避免踩坑，你需要注意的事项</h2>
+<ul>
+<li>
+<p>1、是否需要备案、实名认证</p>
+</li>
+<li>
+<p>2、续费价格</p>
+</li>
+<li>
+<p>3、是否可以更换DNS服务器以及更换费用</p>
+</li>
+<li>
+<p>4、是否提供免费的SSL、DNS、CDN加速和WHOIS隐私保护，以及免费的年份</p>
+</li>
+<li>
+<p>5、域名是否存在不良历史</p>
+</li>
+<li>
+<p>6、每个平台的支付方式不一样</p>
+</li>
+</ul>
+<br/>
+<h2 id="六一些靠谱的域名注册商">六、一些靠谱的域名注册商</h2>
+<h3 id="1阿里云">1、阿里云</h3>
+<p>阿里云是国内靠谱的云平台，中文技术资料丰富。阿里云的售后服务和工单系统也挺不错的，遇到问题和报错容易解决。注册域名需要备案和实名认证。</p>
+<h3 id="2腾讯云">2、腾讯云</h3>
+<p>阿里云和腾讯云的行业地位在国内都是数一数二的存在。价格和服务也是差不多，凭个人喜好选择。同样，注册域名需要备案和实名认证。腾讯云拥有专业的售后工程师团队，提供24小时不间断的技术支持，确保用户在使用过程中的问题能够及时解决。</p>
+<h3 id="3spaceship">3、SpaceShip</h3>
+<p>SpaceShip注册商以其低廉的价格吸引客户，尤其是新注册域名时，费用相对较低。对于符合条件的Spaceship域名,隐私保护是100%免费的。Spaceship支持免费的高级DNS解析服务。</p>
+<h3 id="4cloudflare">4、Cloudflare</h3>
+<p>Cloudflare的域名注册服务以成本价进行，不收取额外费用，续费也没有涨价的情况。Cloudflare注册域名时，费用透明，不会存在令人意外的续期费和隐藏附加费用。此外，Cloudflare还提供隐私保护，注册的域名Whois信息不会公开。 需要注意的是，Cloudflare注册的域名在免费版中不支持自定义DNS。Cloudflare有中文网站。</p>
+<h3 id="5namecheap">5、Namecheap</h3>
+<p>Namecheap的价格虽然不是行业内最低，但性价比高，续费价格也相对合理。Namecheap提供免费的DNS服务，用户可以依赖其稳定的DNS管理，而无需转向第三方服务。</p>
+<h3 id="6godaddy">6、GoDaddy</h3>
+<p>全球最大的域名注册商，GoDaddy以其用户友好的界面而闻名，提供各种附加服务，包括网站建设工具，电子邮件托管和SSL证书。但是Godaddy的域名价格很贵，Godaddy有中文界面。</p>
+<h3 id="7google-domains">7、Google Domains</h3>
+<p>Google的域名注册商拥有简单的界面，并与其他Google服务无缝对接。它提供电子邮件和网站托管服务。</p>
+<h3 id="8domaincom">8、Domain.com</h3>
+<p>该注册商提供广泛的服务，包括域名注册、网站建设工具和托管解决方案。</p>
+
+			</div>
+		</article>
+	</main>
+<aside>
+	<div>
+		<div>
+			<strong>LATEST POSTS</strong>
+		</div>
+		<div>
+			<ul>
+				
+				
+				<li><a href="https://999338.xyz/posts/9b03/">net域名价格列表对比，net域名注册和续费是多少钱人民币</a></li>
+				
+				
+				<li><a href="https://999338.xyz/posts/8b02/">48元十年域名注册，com多少钱，在哪里购买最便宜</a></li>
+				
+				
+				<li><a href="https://999338.xyz/posts/8b01/">github page域名设置报错，Enforce HTTPS错误，不能勾选</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</aside>
+
+
+	<footer>
+	<p>&copy; 2024 &nbsp;<a href="https://999338.xyz/">999338.xyz</a>&nbsp;
+	<a href="https://999338.xyz/sitemap.xml">sitemap</a>
+	
+	
+			
+	
+	</p>
+</footer>
+
+</body>
+
+<script>
+	
+	function editA(){
+	var aN = document.getElementById('articleid').getElementsByTagName("a");
+	console.log(aN);
+	for(var i =0; i < aN.length; i++){
+	aN[i].target ="_blank"; 
+	}}
+	editA();
+</script>
+
+</html>
