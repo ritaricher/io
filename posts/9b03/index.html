@@ -9,7 +9,8 @@
 		html {overflow-y: scroll}
 		:root { --bgcolor: white; --fontcolor: #0f0f0f; --linkcolor: #136ec2; --visitedcolor: #136ec2; --precolor: #fff; --prebgcolor: #088f6f;}
 		@media (prefers-color-scheme: dark) { :root { --bgcolor: black; --fontcolor: white; --linkcolor: #5bf; --visitedcolor: #ae5ee0; --precolor: #fff; --prebgcolor: #383838;}}
-		body{max-width:1000px;margin:20px auto;padding:0 10px;font-size:21px;color:var(--fontcolor); background: white;line-height: 1.7;}
+		 
+		body{margin:20px auto;padding:0 10px;font-size:21px;color:var(--fontcolor); background: white;line-height: 1.7;}
 		a:link{color: var(--linkcolor);}a:visited{color: var(--visitedcolor)}a:active{color: var(--visitedcolor)}a:hover{color: red;text-decoration:underline red;} h1,h2,h3,h4,h5,h6{line-height:1.2}
 		p > code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
 		code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
@@ -19,31 +20,58 @@
 		figcaption {color: #888; font: 12px/1.5 monospace; text-align: center;}
 		figure {margin: auto}
 		img {display: block; max-width: 100%; height: auto; margin: auto}
-		body header nav{margin:1px 0px 40px 0px;}	
+		body header nav{margin:1px 0px 40px 0px;text-align: center;}	
 		body header nav a{text-decoration: none;font-size: 15px;margin-right: 15px;}
 		body article blockquote{font-size: 17px;color: #735e5e;background-color: #cff2ac;padding-left: 5px;margin-left: 15px;}
+
 		body main article h1 a{text-decoration: none;}
 		body main #articleid-index{margin:15px auto;}
 		body main #articleid-index #titleid-index a{text-decoration: none;}
 		body main #articleid-index #tagid-index a{font-size: 14px;color:#136dc28e;}
-		body footer p{font-size: 16px;}
+		body footer p{font-size: 16px;text-align: center;}
 	
-		table {
-  border-collapse: collapse;
-  margin: 1rem 0;
-  display: block;
-  overflow-x: auto;
-}
-thead {
-  background-color: #f6f8fa;
-}
-tr {
-  border-top: 1px solid #dfe2e5;
-}
-td, th {
-  border: 1px solid #cdd0d3;
-  padding: .6em 1em;
-}
+		body .maincss {width:600px;margin:auto;}
+		body .maincss div h1{text-align: center;}
+		body aside .latestposts{width:600px;margin:auto;}
+
+		table {border-collapse: collapse;margin: 1rem 0;display: block;overflow-x: auto;}
+		thead {background-color: #f6f8fa;}
+		tr {border-top: 1px solid #dfe2e5;}
+		td, th {border: 1px solid #cdd0d3;padding: .6em 1em;}
+
+		body .aritclemain {display: grid;grid-template-columns: 23% minmax(300px,1000px);gap: 1.5vw;grid-auto-flow: row;margin: 0 10vw;}
+
+		@media screen and (max-width:1400px){
+			body .aritclemain {
+				margin: 0 2vw;
+			}
+		}
+
+		@media screen and (max-width:1200px){
+			body .aritclemain {
+				margin: 0 1vw;
+				gap: 1vw;
+			}
+		}
+
+		@media screen and (max-width:1000px){
+			body .aritclemain {
+				margin: 0;
+				gap: 0.8vw;
+			}
+			body header .topnav {display: none;}
+		}
+
+
+
+
+
+		body main .articletoc #TableOfContents ul{padding-left: 20px;}
+		body main .articletoc li{list-style-type: none;}
+		body main .articletoc #TableOfContents li a{text-decoration: none;}
+
+		body header .topnav {background-color: rgb(253 255 254);position: fixed;top :0;left:0;width: 100%;box-shadow: 0 0.06rem 3px 0 rgb(193 215 215);height: 45px;z-index: 10;display: none;}
+
 
 
 	</style>
@@ -57,6 +85,8 @@ td, th {
 		body main #articleid h6{border-inline-start: 3px solid #56a2e147;margin-left: 10px;color: #3a3434;}
 		body main #contentid{font-size: 20px;}
 	</style>
+	
+
 	
 	
 	<link rel="canonical" href="https://999338.xyz/posts/9b03/">
@@ -76,41 +106,141 @@ td, th {
   gtag('config', 'G-JBD9FLP6G8');
 </script>
 
+
+<style type=text/css>
+	@media screen and (max-width:800px){
+		body {margin: 10px 5px;padding: 0;overflow-x: hidden;}
+		body .maincss {width:100%;}
+		body aside .latestposts{width:100%;}
+		body .articletoc {display: none;}
+		body .aritclemain {grid-template-columns: 100%;margin: 0;}
+		body main #contentid table {font-size: 0.7em;}
+		body header .topnav {display: block;}
+		body header .mainnav {margin-top: 70px;}
+		body header nav a {margin-right: 0.4em;}
+		body main #contentid {font-size: 1em;}
+	}
+</style>
+
 </head>
 <body>
+
 	<header>
+
 	
 	
 
 	
 	
-		<nav>
-				<a href="https://999338.xyz/">999338.xyz</a> 
-				
-				
-				
-				<a href="https://999338.xyz/posts/">Posts</a> 
-				
-				
-				<a href="https://999338.xyz/categories/">Categories</a> 
-				
-				
-				<a href="https://999338.xyz/tags/">Tags</a> 
-				
-		</nav>
+
+
+	<style type=text/css>
+		body header .topnav .topnavimg1 {position: fixed;width:32px;height: 35px;margin:4px 0 0 23px;}
+		body header .topnavtoc {position:fixed;top:39px;left:0;z-index:11;background-color: white;width:55%;height:100%;box-shadow: 2px 7px 5px #868d8b;padding-top: 2vw;overflow-y:auto;display:none;}
+		body header .topnavtoc span {margin-left: 18vw;}
+		body header .topnavtoc #TableOfContents {text-align: left;padding-bottom: 3vw;font-size: 0.8em;}
+		body header .topnavtoc #TableOfContents ul {margin-top: 0;padding-left: 3vw;list-style-type: none;}
+	</style>
+
+	<div class="topnav" id="topnavid">
+		<img class="topnavimg1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3WwQkAIAwDwIzezesWKuEO8jf4aBIAHpmSZEuS1w9QJK0/MiUBAPLBRTbj0zoatySpKTIlAQDywUU249M6GrckqSkyJQEg1x3OPOvHECpbTAAAAABJRU5ErkJggg==" onclick="topnavjs()">
+	</div>
+	<div class="topnavtoc" id="topnavtocid">
+		<span>目录</span>
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#一net域名价格列表对比-2024年9月">一、net域名价格列表对比 2024年9月</a></li>
+    <li><a href="#二免费的二级域名">二、免费的二级域名</a></li>
+    <li><a href="#三便宜的顶级域名">三、便宜的顶级域名</a></li>
+    <li><a href="#四影响域名价格的6个因素">四、影响域名价格的6个因素</a>
+      <ul>
+        <li><a href="#1域名后缀名">1、域名后缀名</a></li>
+        <li><a href="#2续费和合同期限">2、续费和合同期限</a></li>
+        <li><a href="#3域名注册商">3、域名注册商</a></li>
+        <li><a href="#4优质域名">4、优质域名</a></li>
+        <li><a href="#5域名转让">5、域名转让</a></li>
+        <li><a href="#6隐私保护成本">6、隐私保护成本</a></li>
+      </ul>
+    </li>
+    <li><a href="#五为了避免踩坑你需要注意的事项">五、为了避免踩坑，你需要注意的事项</a></li>
+    <li><a href="#六一些靠谱的域名注册商">六、一些靠谱的域名注册商</a>
+      <ul>
+        <li><a href="#1阿里云">1、阿里云</a></li>
+        <li><a href="#2腾讯云">2、腾讯云</a></li>
+        <li><a href="#3spaceship">3、SpaceShip</a></li>
+        <li><a href="#4cloudflare">4、Cloudflare</a></li>
+        <li><a href="#5namecheap">5、Namecheap</a></li>
+        <li><a href="#6godaddy">6、GoDaddy</a></li>
+        <li><a href="#7google-domains">7、Google Domains</a></li>
+        <li><a href="#8domaincom">8、Domain.com</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+	</div>
+
+	<nav class="mainnav" id="mainnavid">
+		<a href="https://999338.xyz/">999338.xyz</a> 
+		
+		
+		
+		<a href="https://999338.xyz/posts/">Posts</a> 
+		
+		
+		<a href="https://999338.xyz/categories/">Categories</a> 
+		
+		
+		<a href="https://999338.xyz/tags/">Tags</a> 
+		
+	</nav>
 	
 	
 </header>
 
 	
-	<main>
+	<main class="aritclemain">
+		<div class="articletoc">
+			<div style="position: sticky;top:15px;font-size: 0.65em;border: 1px solid rgba(0, 0, 0, .1);margin-top: 40px;">
+				<li style="background-color: rgb(227 240 252);font-weight: bold;text-align: center;font-size: 18px;">目录</li>
+				<nav id="TableOfContents">
+  <ul>
+    <li><a href="#一net域名价格列表对比-2024年9月">一、net域名价格列表对比 2024年9月</a></li>
+    <li><a href="#二免费的二级域名">二、免费的二级域名</a></li>
+    <li><a href="#三便宜的顶级域名">三、便宜的顶级域名</a></li>
+    <li><a href="#四影响域名价格的6个因素">四、影响域名价格的6个因素</a>
+      <ul>
+        <li><a href="#1域名后缀名">1、域名后缀名</a></li>
+        <li><a href="#2续费和合同期限">2、续费和合同期限</a></li>
+        <li><a href="#3域名注册商">3、域名注册商</a></li>
+        <li><a href="#4优质域名">4、优质域名</a></li>
+        <li><a href="#5域名转让">5、域名转让</a></li>
+        <li><a href="#6隐私保护成本">6、隐私保护成本</a></li>
+      </ul>
+    </li>
+    <li><a href="#五为了避免踩坑你需要注意的事项">五、为了避免踩坑，你需要注意的事项</a></li>
+    <li><a href="#六一些靠谱的域名注册商">六、一些靠谱的域名注册商</a>
+      <ul>
+        <li><a href="#1阿里云">1、阿里云</a></li>
+        <li><a href="#2腾讯云">2、腾讯云</a></li>
+        <li><a href="#3spaceship">3、SpaceShip</a></li>
+        <li><a href="#4cloudflare">4、Cloudflare</a></li>
+        <li><a href="#5namecheap">5、Namecheap</a></li>
+        <li><a href="#6godaddy">6、GoDaddy</a></li>
+        <li><a href="#7google-domains">7、Google Domains</a></li>
+        <li><a href="#8domaincom">8、Domain.com</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+			</div>
+		</div>
 		<article id="articleid">
 			<h1>net域名价格列表对比，net域名注册和续费是多少钱人民币</h1>
 			
 		       
 		           <a href="https://999338.xyz/tags/%E5%9F%9F%E5%90%8D/" style="border:1px solid #0a739c;text-decoration: none;border-radius:5px;padding:2px 3px;background-color: white;font-size: 14px;">域名</a>
         	       
-
 			<div id="contentid">
 				<p>net是“网络network”的缩写。net域名是顶级域名，全球通用不受地域限制。net域名因其简短、易记且含义明确，在网民中具有很高的可识别性。截至2021年，它是继com、ru和org之后第四大最受欢迎的顶级域名。</p>
 <p><span style="background-color: #FFFF00;">net域名的价格大致在每年80元到200元之间。</span></p>
@@ -304,8 +434,9 @@ body main #contentid table{font-size:17px;}
 			</div>
 		</article>
 	</main>
+
 <aside>
-	<div>
+	<div class="latestposts">
 		<div>
 			<strong>LATEST POSTS</strong>
 		</div>
@@ -328,6 +459,8 @@ body main #contentid table{font-size:17px;}
 		</div>
 	</div>
 </aside>
+	
+
 
 
 	<footer>
@@ -351,6 +484,83 @@ body main #contentid table{font-size:17px;}
 	aN[i].target ="_blank"; 
 	}}
 	editA();
+</script>
+
+<script>
+	
+	let topnavtocdis = false;
+	function topnavjs() {
+		if(topnavtocdis){
+			document.getElementById('topnavtocid').style.display = "none";			
+			topnavtocdis = false;
+		}
+		else{
+			document.getElementById('topnavtocid').style.display = "block";
+			topnavtocdis = true;
+		}
+	}
+
+
+	
+	let lastScrollTop = 0; 
+	window.addEventListener('scroll', function() {
+    
+    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (currentScrollTop < lastScrollTop) {
+        
+        if (lastScrollTop - currentScrollTop >= 18) {
+            
+			
+			if (window.innerWidth < 800) {
+				document.getElementById('topnavid').style.display = "block";
+				document.getElementById('topnavtocid').style.display = "none";
+				topnavtocdis = false;
+				console.log('向上');
+			}else{
+				document.getElementById('topnavid').style.display = "none";
+				document.getElementById('topnavtocid').style.display = "none";
+				topnavtocdis = false;
+			}
+        }
+    } 
+    
+    else if (currentScrollTop > lastScrollTop) {
+        
+        if (currentScrollTop - lastScrollTop >= 18) {
+            
+			document.getElementById('topnavid').style.display = "none";
+			document.getElementById('topnavtocid').style.display = "none";
+			topnavtocdis = false;
+        }
+    }
+    
+    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; 
+});
+  </script>
+<script>
+	
+	
+	window.addEventListener('resize', function() {
+		if (window.innerWidth > 800){
+			document.getElementById('topnavid').style.display = "none";
+			document.getElementById('topnavtocid').style.display = "none";
+			document.getElementById('mainnavid').style.marginTop = "0px";
+		}
+	});
+
+	
+	window.addEventListener('resize', function() {
+	if (window.innerWidth < lastWidth) { 
+		
+		if (window.innerWidth <= 800 && lastWidth > 800){
+			document.getElementById('topnavid').style.display = "block";
+			document.getElementById('mainnavid').style.marginTop = "70px";
+		}
+	}
+	lastWidth = window.innerWidth; 
+	});
+	let lastWidth = window.innerWidth; 
 </script>
 
 </html>

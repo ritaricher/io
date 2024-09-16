@@ -9,7 +9,8 @@
 		html {overflow-y: scroll}
 		:root { --bgcolor: white; --fontcolor: #0f0f0f; --linkcolor: #136ec2; --visitedcolor: #136ec2; --precolor: #fff; --prebgcolor: #088f6f;}
 		@media (prefers-color-scheme: dark) { :root { --bgcolor: black; --fontcolor: white; --linkcolor: #5bf; --visitedcolor: #ae5ee0; --precolor: #fff; --prebgcolor: #383838;}}
-		body{max-width:1000px;margin:20px auto;padding:0 10px;font-size:21px;color:var(--fontcolor); background: white;line-height: 1.7;}
+		 
+		body{margin:20px auto;padding:0 10px;font-size:21px;color:var(--fontcolor); background: white;line-height: 1.7;}
 		a:link{color: var(--linkcolor);}a:visited{color: var(--visitedcolor)}a:active{color: var(--visitedcolor)}a:hover{color: red;text-decoration:underline red;} h1,h2,h3,h4,h5,h6{line-height:1.2}
 		p > code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
 		code{color: var(--precolor); background: var(--prebgcolor); padding:2px}
@@ -19,31 +20,58 @@
 		figcaption {color: #888; font: 12px/1.5 monospace; text-align: center;}
 		figure {margin: auto}
 		img {display: block; max-width: 100%; height: auto; margin: auto}
-		body header nav{margin:1px 0px 40px 0px;}	
+		body header nav{margin:1px 0px 40px 0px;text-align: center;}	
 		body header nav a{text-decoration: none;font-size: 15px;margin-right: 15px;}
 		body article blockquote{font-size: 17px;color: #735e5e;background-color: #cff2ac;padding-left: 5px;margin-left: 15px;}
+
 		body main article h1 a{text-decoration: none;}
 		body main #articleid-index{margin:15px auto;}
 		body main #articleid-index #titleid-index a{text-decoration: none;}
 		body main #articleid-index #tagid-index a{font-size: 14px;color:#136dc28e;}
-		body footer p{font-size: 16px;}
+		body footer p{font-size: 16px;text-align: center;}
 	
-		table {
-  border-collapse: collapse;
-  margin: 1rem 0;
-  display: block;
-  overflow-x: auto;
-}
-thead {
-  background-color: #f6f8fa;
-}
-tr {
-  border-top: 1px solid #dfe2e5;
-}
-td, th {
-  border: 1px solid #cdd0d3;
-  padding: .6em 1em;
-}
+		body .maincss {width:600px;margin:auto;}
+		body .maincss div h1{text-align: center;}
+		body aside .latestposts{width:600px;margin:auto;}
+
+		table {border-collapse: collapse;margin: 1rem 0;display: block;overflow-x: auto;}
+		thead {background-color: #f6f8fa;}
+		tr {border-top: 1px solid #dfe2e5;}
+		td, th {border: 1px solid #cdd0d3;padding: .6em 1em;}
+
+		body .aritclemain {display: grid;grid-template-columns: 23% minmax(300px,1000px);gap: 1.5vw;grid-auto-flow: row;margin: 0 10vw;}
+
+		@media screen and (max-width:1400px){
+			body .aritclemain {
+				margin: 0 2vw;
+			}
+		}
+
+		@media screen and (max-width:1200px){
+			body .aritclemain {
+				margin: 0 1vw;
+				gap: 1vw;
+			}
+		}
+
+		@media screen and (max-width:1000px){
+			body .aritclemain {
+				margin: 0;
+				gap: 0.8vw;
+			}
+			body header .topnav {display: none;}
+		}
+
+
+
+
+
+		body main .articletoc #TableOfContents ul{padding-left: 20px;}
+		body main .articletoc li{list-style-type: none;}
+		body main .articletoc #TableOfContents li a{text-decoration: none;}
+
+		body header .topnav {background-color: rgb(253 255 254);position: fixed;top :0;left:0;width: 100%;box-shadow: 0 0.06rem 3px 0 rgb(193 215 215);height: 45px;z-index: 10;display: none;}
+
 
 
 	</style>
@@ -66,34 +94,71 @@ td, th {
   gtag('config', 'G-JBD9FLP6G8');
 </script>
 
+
+<style type=text/css>
+	@media screen and (max-width:800px){
+		body {margin: 10px 5px;padding: 0;overflow-x: hidden;}
+		body .maincss {width:100%;}
+		body aside .latestposts{width:100%;}
+		body .articletoc {display: none;}
+		body .aritclemain {grid-template-columns: 100%;margin: 0;}
+		body main #contentid table {font-size: 0.7em;}
+		body header .topnav {display: block;}
+		body header .mainnav {margin-top: 70px;}
+		body header nav a {margin-right: 0.4em;}
+		body main #contentid {font-size: 1em;}
+	}
+</style>
+
 </head>
 <body>
+
 	<header>
+
 	
 	
 
 	
 	
-		<nav>
-				<a href="https://999338.xyz/">999338.xyz</a> 
-				
-				
-				
-				<a href="https://999338.xyz/posts/">Posts</a> 
-				
-				
-				<a href="https://999338.xyz/categories/">Categories</a> 
-				
-				
-				<a href="https://999338.xyz/tags/">Tags</a> 
-				
-		</nav>
+
+
+	<style type=text/css>
+		body header .topnav .topnavimg1 {position: fixed;width:32px;height: 35px;margin:4px 0 0 23px;}
+		body header .topnavtoc {position:fixed;top:39px;left:0;z-index:11;background-color: white;width:55%;height:100%;box-shadow: 2px 7px 5px #868d8b;padding-top: 2vw;overflow-y:auto;display:none;}
+		body header .topnavtoc span {margin-left: 18vw;}
+		body header .topnavtoc #TableOfContents {text-align: left;padding-bottom: 3vw;font-size: 0.8em;}
+		body header .topnavtoc #TableOfContents ul {margin-top: 0;padding-left: 3vw;list-style-type: none;}
+	</style>
+
+	<div class="topnav" id="topnavid">
+		<img class="topnavimg1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAT0lEQVR4nO3WwQkAIAwDwIzezesWKuEO8jf4aBIAHpmSZEuS1w9QJK0/MiUBAPLBRTbj0zoatySpKTIlAQDywUU249M6GrckqSkyJQEg1x3OPOvHECpbTAAAAABJRU5ErkJggg==" onclick="topnavjs()">
+	</div>
+	<div class="topnavtoc" id="topnavtocid">
+		<span>目录</span>
+		<nav id="TableOfContents"></nav>
+
+	</div>
+
+	<nav class="mainnav" id="mainnavid">
+		<a href="https://999338.xyz/">999338.xyz</a> 
+		
+		
+		
+		<a href="https://999338.xyz/posts/">Posts</a> 
+		
+		
+		<a href="https://999338.xyz/categories/">Categories</a> 
+		
+		
+		<a href="https://999338.xyz/tags/">Tags</a> 
+		
+	</nav>
 	
 	
 </header>
 
 	
-	<main>
+	<main class="maincss">
 		
 		
 		<div>
@@ -158,6 +223,83 @@ td, th {
 	aN[i].target ="_blank"; 
 	}}
 	editA();
+</script>
+
+<script>
+	
+	let topnavtocdis = false;
+	function topnavjs() {
+		if(topnavtocdis){
+			document.getElementById('topnavtocid').style.display = "none";			
+			topnavtocdis = false;
+		}
+		else{
+			document.getElementById('topnavtocid').style.display = "block";
+			topnavtocdis = true;
+		}
+	}
+
+
+	
+	let lastScrollTop = 0; 
+	window.addEventListener('scroll', function() {
+    
+    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (currentScrollTop < lastScrollTop) {
+        
+        if (lastScrollTop - currentScrollTop >= 18) {
+            
+			
+			if (window.innerWidth < 800) {
+				document.getElementById('topnavid').style.display = "block";
+				document.getElementById('topnavtocid').style.display = "none";
+				topnavtocdis = false;
+				console.log('向上');
+			}else{
+				document.getElementById('topnavid').style.display = "none";
+				document.getElementById('topnavtocid').style.display = "none";
+				topnavtocdis = false;
+			}
+        }
+    } 
+    
+    else if (currentScrollTop > lastScrollTop) {
+        
+        if (currentScrollTop - lastScrollTop >= 18) {
+            
+			document.getElementById('topnavid').style.display = "none";
+			document.getElementById('topnavtocid').style.display = "none";
+			topnavtocdis = false;
+        }
+    }
+    
+    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; 
+});
+  </script>
+<script>
+	
+	
+	window.addEventListener('resize', function() {
+		if (window.innerWidth > 800){
+			document.getElementById('topnavid').style.display = "none";
+			document.getElementById('topnavtocid').style.display = "none";
+			document.getElementById('mainnavid').style.marginTop = "0px";
+		}
+	});
+
+	
+	window.addEventListener('resize', function() {
+	if (window.innerWidth < lastWidth) { 
+		
+		if (window.innerWidth <= 800 && lastWidth > 800){
+			document.getElementById('topnavid').style.display = "block";
+			document.getElementById('mainnavid').style.marginTop = "70px";
+		}
+	}
+	lastWidth = window.innerWidth; 
+	});
+	let lastWidth = window.innerWidth; 
 </script>
 
 </html>
