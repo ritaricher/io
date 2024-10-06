@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Seo on 个人博客</title>
-    <link>http://localhost:1313/tags/seo/</link>
+    <link>https://999338.xyz/tags/seo/</link>
     <description>Recent content in Seo on 个人博客</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 28 Sep 2024 13:43:40 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://999338.xyz/tags/seo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>静态网站加速，正确配置cloudflare|网站优化seo</title>
-      <link>http://localhost:1313/posts/9b09/</link>
+      <link>https://999338.xyz/posts/9b09/</link>
       <pubDate>Sat, 28 Sep 2024 13:43:40 +0800</pubDate>
-      <guid>http://localhost:1313/posts/9b09/</guid>
+      <guid>https://999338.xyz/posts/9b09/</guid>
       <description>一、简介 静态网站加速的前提：&#xA;如要启用Cloudflare CDN的功能，需检查DNS代理状态，激活后有一个橙色的云朵。&#xA;Cloudflare缓存知识点：&#xA;Cloudflare的默认缓存配置，仅对静态资源生效，比如js、css、jpg等等；刷新和缓存时间，一般为2小时。 Cache Rules的优先级高于Page Rules。如果Cache Rules中的规则与Page Rules冲突，Cache Rules规则会覆盖Page Rules规则。 Cache Rules规则从上往下，权重是递增的。如果规则有冲突，下面的规则会覆盖上面的规则。 二、静态网站部分缓存 1、创建cache rules 右上角选择简体中文 - 规则 - cache rules - 创建规则&#xA;2、Cache Rules规则设置 缓存Cache Rules：指定应缓存哪些资源以及缓存多长时间。&#xA;1、规则名称：缓存文章内容 2、自定义筛选表达式 3、字段：URL完整，运算符：通配符，值：https://example.com/posts/* 表达式预览：(http.request.full_uri wildcard &amp;ldquo;https://example.com/posts/*&amp;rdquo;) 4、缓存资格：符合缓存条件 5、边缘TTL：忽略缓存控制标头，使用此TTL。 生存时间选择一年 边缘TTL指的是设置CDN节点服务器的缓存时间，使静态网站能够更快地被缓存并分发到全球各地的用户。 6、浏览器TTL：替代源服务器，使用此TTL。 生存时间选择一个月 对于不经常变化的静态网站，可以设置较长的TTL，以便浏览器直接从缓存中加载资源，而无需再次请求服务器。 7、重新验证时不提供过时内容 勾选打开，CDN节点服务器每次都会验证，Cloudflare不会提供旧内容，同时从源服务器获取最新内容。确保缓存的内容是最新的。 8、保存 3、缓存配置 缓存 - 配置&#xA;缓存级别：忽略查询字符串 浏览器缓存TTL：一个月 Crawler Hints&#xA;优化搜索引擎爬虫抓取新内容，Cloudflare会立即检测到你的内容更新，并通过IndexNow协议向搜索引擎发送更新通知。 Always Online&#xA;启用Always Online后，如果你的源服务器出现故障，Cloudflare将从其缓存中提供页面，因此访问者仍然可以看到其访问的页面。 Tiered Cache&#xA;Smart Tiered Caching Topology：在Cloudflare CDN网络中使用经过优化的路由，更快、更可靠且更安全地为您的用户提供响应。分层缓存策略Tiered Cache将缓存划分为多个层次，每个层次具有不同的容量和速度。 三、其他设置 速度优化 速度 - 优化 -内容优化</description>
     </item>
     <item>
       <title>免费网站测速工具10个推荐 | 网站速度SEO优化 在线ping测试</title>
-      <link>http://localhost:1313/posts/9b05/</link>
+      <link>https://999338.xyz/posts/9b05/</link>
       <pubDate>Sun, 22 Sep 2024 17:29:34 +0800</pubDate>
-      <guid>http://localhost:1313/posts/9b05/</guid>
+      <guid>https://999338.xyz/posts/9b05/</guid>
       <description>一、网站测速简介 当网页加载时间超过3秒，超过50%的用户会关闭网页；当移动端页面加载时间从1秒增加到3秒时，跳出率会增加 32%。网站速度影响用户体验，跳出率的增加会导致网站排名落后。谷歌多次在SEO建议中提到网站速度优化的重要性，被列入重要的排名评分标准。&#xA;PING检测 ： 检测网站的连通性和延迟情况。 HTTP测速 ： 测试网页的加载速度和响应时间。 你的网站速度如何？又如何优化呢？就用下面的工具检测一下吧！帮你找出网站变慢的原因，解决并提升网站排名！&#xA;二、国内网站测速工具 1、站长工具chinaz 网址：https://tool.chinaz.com/speedtest 站长工具chinaz是国内非常有名的SEO网站，国内网站速度检测的首选。支持多种网络线路，包括电信、联通、移动等，用户可以选择不同的线路进行测速，以获得更准确的结果。&#xA;2、拨测网 网址：https://www.boce.com/http 拨测网站测速服务有免费次数限制，实时检测并提供网站访问可用性、响应速度和HTTP状态码等关键数据。&#xA;3、17ce 网址：https://www.17ce.com 17ce网是一个专注于网站测速和监测的在线平台，隶属于海云测网络科技有限公司。自2011年上线以来，17ce网提供了多种免费的测速服务，可视化的地图图表，旨在帮助用户评估和优化网站的性能。&#xA;4、测速网 网址：https://www.cesu.net/http 测速网cesu是一个提供多种网络测速和监测服务的在线平台，旨在帮助用户评估网络性能和网站速度。测速网的主要功能有：网站速度测试、Ping检测、DNS查询、路由追踪。&#xA;5、vsping 网址：https://www.vsping.com VSPing的检测节点覆盖全国各省，包括BGP双线、多线、电信、联通、移动等多个网络环境，以确保测试结果的准确性。VSPing允许用户进行网站速度测试、网络速度检测和Ping测试，实时获取网站的响应状态。&#xA;三、国外网站测速工具 1. PageSpeed Insights 网址：https://pagespeed.web.dev&#xA;Google推出的免费网站测速工具&#xA;可分别测试网站在移动设备和桌面设备上的加载速度&#xA;提供优化建议,直接告知应该优化的地方,如移除阻塞渲染的资源等&#xA;2. Pingdom Tools 网址：https://tools.pingdom.com&#xA;可针对每个网页的图像、CSS和JavaScript进行测试,并给出性能等级&#xA;提供页面加载时间、页面大小和请求信息的数据&#xA;3. GTmetrix 网址：https://gtmetrix.com&#xA;与PageSpeed Insights类似,提供网页开启速度检测和分析&#xA;根据不同的网站效能给予F到A等级评分,如FTTB、压缩、缓存、使用CDN等&#xA;报告分为六部分:摘要、细节、效能、内容和屏幕截图&#xA;4. WebPageTest 网址：https://www.webpagetest.org&#xA;提供超过40个国家节点,能选择超过25种浏览器(包括移动设备)&#xA;根据不同的网站效能给予F到A等级评分&#xA;报告分为六部分:摘要、细节、效能、内容和屏幕截图&#xA;5. isitwp 网址：https://www.isitwp.com/free-website-speed-test-tool-for-wordpress&#xA;IsItWP允许用户输入网站URL，快速测试其加载速度，并提供详细的性能数据，包括加载时间、性能等级和请求数量等指标。&#xA;在完成速度测试后，IsItWP会提供改进性能的建议，帮助用户优化其网站以提高加载速度和用户体验。&#xA;四、其他网站测速工具集合 阿里云网络拨测工具&#xA;卡卡网 Webkaka&#xA;uptrends&#xA;webuup&#xA;Sucuri Load Time Tester&#xA;Dotcom-Tools Website Speed Test</description>
     </item>
   </channel>
