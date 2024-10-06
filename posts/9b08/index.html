@@ -343,6 +343,17 @@
 			</div>
 		</article>
 	</main>
+	<script>
+		
+		function editA(){
+		var aN = document.getElementById('articleid').getElementsByTagName("a");
+		console.log(aN);
+		for(var i =0; i < aN.length; i++){
+		aN[i].target ="_blank"; 
+		}}
+		editA();
+	</script>
+	
 
 <aside>
 	<div class="latestposts">
@@ -387,16 +398,6 @@
 
 </body>
 
-<script>
-	
-	function editA(){
-	var aN = document.getElementById('articleid').getElementsByTagName("a");
-	console.log(aN);
-	for(var i =0; i < aN.length; i++){
-	aN[i].target ="_blank"; 
-	}}
-	editA();
-</script>
 
 <script>
 	
