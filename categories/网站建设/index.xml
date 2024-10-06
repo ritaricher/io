@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>网站建设 on 个人博客</title>
-    <link>https://999338.xyz/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</link>
+    <link>http://localhost:1313/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</link>
     <description>Recent content in 网站建设 on 个人博客</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 28 Sep 2024 13:43:40 +0800</lastBuildDate>
-    <atom:link href="https://999338.xyz/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>静态网站加速，正确配置cloudflare|网站优化seo</title>
-      <link>https://999338.xyz/posts/9b09/</link>
+      <link>http://localhost:1313/posts/9b09/</link>
       <pubDate>Sat, 28 Sep 2024 13:43:40 +0800</pubDate>
-      <guid>https://999338.xyz/posts/9b09/</guid>
+      <guid>http://localhost:1313/posts/9b09/</guid>
       <description>一、简介 静态网站加速的前提：&#xA;如要启用Cloudflare CDN的功能，需检查DNS代理状态，激活后有一个橙色的云朵。&#xA;Cloudflare缓存知识点：&#xA;Cloudflare的默认缓存配置，仅对静态资源生效，比如js、css、jpg等等；刷新和缓存时间，一般为2小时。 Cache Rules的优先级高于Page Rules。如果Cache Rules中的规则与Page Rules冲突，Cache Rules规则会覆盖Page Rules规则。 Cache Rules规则从上往下，权重是递增的。如果规则有冲突，下面的规则会覆盖上面的规则。 二、静态网站部分缓存 1、创建cache rules 右上角选择简体中文 - 规则 - cache rules - 创建规则&#xA;2、Cache Rules规则设置 缓存Cache Rules：指定应缓存哪些资源以及缓存多长时间。&#xA;1、规则名称：缓存文章内容 2、自定义筛选表达式 3、字段：URL完整，运算符：通配符，值：https://example.com/posts/* 表达式预览：(http.request.full_uri wildcard &amp;ldquo;https://example.com/posts/*&amp;rdquo;) 4、缓存资格：符合缓存条件 5、边缘TTL：忽略缓存控制标头，使用此TTL。 生存时间选择一年 边缘TTL指的是设置CDN节点服务器的缓存时间，使静态网站能够更快地被缓存并分发到全球各地的用户。 6、浏览器TTL：替代源服务器，使用此TTL。 生存时间选择一个月 对于不经常变化的静态网站，可以设置较长的TTL，以便浏览器直接从缓存中加载资源，而无需再次请求服务器。 7、重新验证时不提供过时内容 勾选打开，CDN节点服务器每次都会验证，Cloudflare不会提供旧内容，同时从源服务器获取最新内容。确保缓存的内容是最新的。 8、保存 3、缓存配置 缓存 - 配置&#xA;缓存级别：忽略查询字符串 浏览器缓存TTL：一个月 Crawler Hints&#xA;优化搜索引擎爬虫抓取新内容，Cloudflare会立即检测到你的内容更新，并通过IndexNow协议向搜索引擎发送更新通知。 Always Online&#xA;启用Always Online后，如果你的源服务器出现故障，Cloudflare将从其缓存中提供页面，因此访问者仍然可以看到其访问的页面。 Tiered Cache&#xA;Smart Tiered Caching Topology：在Cloudflare CDN网络中使用经过优化的路由，更快、更可靠且更安全地为您的用户提供响应。分层缓存策略Tiered Cache将缓存划分为多个层次，每个层次具有不同的容量和速度。 三、其他设置 速度优化 速度 - 优化 -内容优化</description>
     </item>
     <item>
       <title>十年48元最便宜的域名，6位数字xyz域名spaceship注册教程</title>
-      <link>https://999338.xyz/posts/9b08/</link>
+      <link>http://localhost:1313/posts/9b08/</link>
       <pubDate>Thu, 26 Sep 2024 19:48:02 +0800</pubDate>
-      <guid>https://999338.xyz/posts/9b08/</guid>
+      <guid>http://localhost:1313/posts/9b08/</guid>
       <description>一、简介 Spaceship提供的6-9位数字xyz域名的注册费用为4.8元每年，十年仅需48元，价格非常便宜。&#xA;二、提前准备 提前准备好：1、注册邮箱 ；2、支付工具paypal或境外信用卡 VISA、Master、Apple Pay等等。&#xA;注意事项：先购买1年，再续费9年，否则可能会购买失败。&#xA;三、注册账号 先登录官网： Spaceship&#xA;点击登录Sign in注册账号&#xA;下一步点击Sign up注册 下一步填写个人资料 四、搜索域名 注册完成后，进入首页搜索域名，点击搜索&#xA;域名必须是6-9位数字，后缀是xyz&#xA;在购买域名之前，最好先用域名批量查询工具，可使用规则轻松扫描未注册域名。&#xA;如下图所示，这域名显示可以注册，直接可以添加到购物车 Add to Cart 五、先购买域名一年 第一次添加paypal账号的时候要求填写地址信息，可以使用美国地址生成器，谷歌搜索就行 六、再续费域名九年 回到spaceship首页，点击Launchpad 下一步点击Domain list域名列表 点击你购买到的域名 在最右边点击extend subscription自动续期订阅 选择续期9年，点击确认付款 此刻，购买域名已经完成。可以回到域名列表确认购买年限。 </description>
     </item>
     <item>
       <title>org域名价格对比列表（人民币），注册多少钱</title>
-      <link>https://999338.xyz/posts/9b07/</link>
+      <link>http://localhost:1313/posts/9b07/</link>
       <pubDate>Thu, 26 Sep 2024 09:40:46 +0800</pubDate>
-      <guid>https://999338.xyz/posts/9b07/</guid>
+      <guid>http://localhost:1313/posts/9b07/</guid>
       <description>一、org域名价格简介 .org 域名虽然最初设计用于非营利性组织，但现在已经对所有人开放，许多个人、小型企业、商业实体以及任何希望传达其组织性、专业性或社区导向的实体都选择了.org 作为其网站域名。现在org总注册量已经达到1000万了。&#xA;org域名价格一般在每年39元到160元之间。&#xA;二、org域名价格详细对比表，注册与续费 根据不同的注册商，org域名的注册价格和续费价格有所不同。以下是一些常见注册商的价格信息：&#xA;注册商 首年 次年 备注 SpaceShip 39元 69元 免费WHOIS隐私，免费CDN加速 Cloudflare 52.6元 70.9元 免费WHOIS隐私，免费CDN加速和SSL，DNS服务器不可改 Namecheap 52.5元 105元 免费WHOIS隐私，免费CDN加速，第一年送SSL Godaddy 85元 159元 免费WHOIS隐私，续费较高 Namesilo 66.6元 75.7元 免费WHOIS隐私，可改DNS服务器 Dynadot 49元 77元 免费WHOIS隐私 Domain.com 70元 147元 免费WHOIS隐私 Name.com 63元 126元 免费WHOIS隐私 备注：这些国际注册商提供多种顶级域名选项，且在促销期间可能会有更低的注册费用&#xA;链接：net域名价格列表对比&#xA;链接：cc域名价格列表对比&#xA;链接：top域名价格列表对比&#xA;三、注册免费的二级域名eu.org 四、最便宜的域名，后缀xyz </description>
     </item>
     <item>
       <title>top域名哪里买便宜，域名top价格对比列表（人民币）</title>
-      <link>https://999338.xyz/posts/9b06/</link>
+      <link>http://localhost:1313/posts/9b06/</link>
       <pubDate>Wed, 25 Sep 2024 08:41:57 +0800</pubDate>
-      <guid>https://999338.xyz/posts/9b06/</guid>
+      <guid>http://localhost:1313/posts/9b06/</guid>
       <description>一、top域名价格简介 top在英文中代表“顶级”，.TOP域名的总注册量最近突破了200万个域名，代表任何有自信、希望上进、追求成功的群体。&#xA;top域名价格一般在每年12元到60元之间。&#xA;top域名在阿里云一次性注册十年需要188元。&#xA;二、top域名价格详细对比表，注册与续费 根据不同的注册商，top域名的注册价格和续费价格有所不同。以下是一些常见注册商的价格信息：&#xA;注册商 首年 次年 备注 阿里云 12元 32元 需要备案 腾讯云 14元 32元 需要备案 SpaceShip 7.4元 27元 免费WHOIS隐私，免费CDN加速 华为云 9元 33元 需要备案 Namecheap 21元 49元 免费WHOIS隐私，免费CDN加速，第一年送SSL Godaddy 16元 52元 免费WHOIS隐私，续费较高 Namesilo 13元 34元 免费WHOIS隐私，可改DNS服务器 Dynadot 14元 35元 免费WHOIS隐私 西部数码 12元 31元 需要备案 备注：这些国际注册商提供多种顶级域名选项，且在促销期间可能会有更低的注册费用&#xA;链接： net域名价格列表对比&#xA;链接： cc域名价格列表对比&#xA;三、最便宜的域名，后缀xyz Spaceship平台提供极具竞争力的低价&#xA;特定后缀6-9位纯数字xyz （4.8元/年）&#xA;链接： xyz域名十年48元(Spaceship注册教程)&#xA;链接： 免费的二级域名申请推荐&#xA;四、域名注册注意事项 1、是否接入备案 如果网站面向中国大陆用户，购买域名后还需要进行ICP备案和实名认证。&#xA;2、域名是否存在不良使用历史 查看域名是否已被搜索引擎收录，如果之前有不良记录，可能会影响网站SEO。&#xA;3、考虑域名续费与转移 避免隐藏收费，注意续费价格，还有域名转移价格&#xA;4、保护个人信息 考虑是否添加隐私保护服务，以防止他人通过whois查询获取个人信息。隐藏注册人的联系信息，防止垃圾邮件和电话骚扰。&#xA;5、关注域名管理权限 了解域名管理权限，包括多少个子域名、多少个转发、是否可以修改DNS服务器等。</description>
     </item>
     <item>
       <title>免费网站测速工具10个推荐 | 网站速度SEO优化 在线ping测试</title>
-      <link>https://999338.xyz/posts/9b05/</link>
+      <link>http://localhost:1313/posts/9b05/</link>
       <pubDate>Sun, 22 Sep 2024 17:29:34 +0800</pubDate>
-      <guid>https://999338.xyz/posts/9b05/</guid>
+      <guid>http://localhost:1313/posts/9b05/</guid>
       <description>一、网站测速简介 当网页加载时间超过3秒，超过50%的用户会关闭网页；当移动端页面加载时间从1秒增加到3秒时，跳出率会增加 32%。网站速度影响用户体验，跳出率的增加会导致网站排名落后。谷歌多次在SEO建议中提到网站速度优化的重要性，被列入重要的排名评分标准。&#xA;PING检测 ： 检测网站的连通性和延迟情况。 HTTP测速 ： 测试网页的加载速度和响应时间。 你的网站速度如何？又如何优化呢？就用下面的工具检测一下吧！帮你找出网站变慢的原因，解决并提升网站排名！&#xA;二、国内网站测速工具 1、站长工具chinaz 网址：https://tool.chinaz.com/speedtest 站长工具chinaz是国内非常有名的SEO网站，国内网站速度检测的首选。支持多种网络线路，包括电信、联通、移动等，用户可以选择不同的线路进行测速，以获得更准确的结果。&#xA;2、拨测网 网址：https://www.boce.com/http 拨测网站测速服务有免费次数限制，实时检测并提供网站访问可用性、响应速度和HTTP状态码等关键数据。&#xA;3、17ce 网址：https://www.17ce.com 17ce网是一个专注于网站测速和监测的在线平台，隶属于海云测网络科技有限公司。自2011年上线以来，17ce网提供了多种免费的测速服务，可视化的地图图表，旨在帮助用户评估和优化网站的性能。&#xA;4、测速网 网址：https://www.cesu.net/http 测速网cesu是一个提供多种网络测速和监测服务的在线平台，旨在帮助用户评估网络性能和网站速度。测速网的主要功能有：网站速度测试、Ping检测、DNS查询、路由追踪。&#xA;5、vsping 网址：https://www.vsping.com VSPing的检测节点覆盖全国各省，包括BGP双线、多线、电信、联通、移动等多个网络环境，以确保测试结果的准确性。VSPing允许用户进行网站速度测试、网络速度检测和Ping测试，实时获取网站的响应状态。&#xA;三、国外网站测速工具 1. PageSpeed Insights 网址：https://pagespeed.web.dev&#xA;Google推出的免费网站测速工具&#xA;可分别测试网站在移动设备和桌面设备上的加载速度&#xA;提供优化建议,直接告知应该优化的地方,如移除阻塞渲染的资源等&#xA;2. Pingdom Tools 网址：https://tools.pingdom.com&#xA;可针对每个网页的图像、CSS和JavaScript进行测试,并给出性能等级&#xA;提供页面加载时间、页面大小和请求信息的数据&#xA;3. GTmetrix 网址：https://gtmetrix.com&#xA;与PageSpeed Insights类似,提供网页开启速度检测和分析&#xA;根据不同的网站效能给予F到A等级评分,如FTTB、压缩、缓存、使用CDN等&#xA;报告分为六部分:摘要、细节、效能、内容和屏幕截图&#xA;4. WebPageTest 网址：https://www.webpagetest.org&#xA;提供超过40个国家节点,能选择超过25种浏览器(包括移动设备)&#xA;根据不同的网站效能给予F到A等级评分&#xA;报告分为六部分:摘要、细节、效能、内容和屏幕截图&#xA;5. isitwp 网址：https://www.isitwp.com/free-website-speed-test-tool-for-wordpress&#xA;IsItWP允许用户输入网站URL，快速测试其加载速度，并提供详细的性能数据，包括加载时间、性能等级和请求数量等指标。&#xA;在完成速度测试后，IsItWP会提供改进性能的建议，帮助用户优化其网站以提高加载速度和用户体验。&#xA;四、其他网站测速工具集合 阿里云网络拨测工具&#xA;卡卡网 Webkaka&#xA;uptrends&#xA;webuup&#xA;Sucuri Load Time Tester&#xA;Dotcom-Tools Website Speed Test</description>
     </item>
     <item>
       <title>.cc域名多少钱人民币，域名cc价格对比列表 - 域名注册详情</title>
-      <link>https://999338.xyz/posts/9b04/</link>
+      <link>http://localhost:1313/posts/9b04/</link>
       <pubDate>Fri, 06 Sep 2024 21:35:03 +0800</pubDate>
-      <guid>https://999338.xyz/posts/9b04/</guid>
+      <guid>http://localhost:1313/posts/9b04/</guid>
       <description>cc域名价格一般在22元到80元之间，价格非常便宜。&#xA;根据Namecheap 2023年的数据显示，.cc域名在全球国家级域名中注册量排名第9。&#xA;一、cc是什么域名 .cc域名是一个国际顶级域名，澳洲Cocos Islands群岛的后缀，后逐渐被广泛应用并被视为“商业公司Commercial Company”或“中国公司Chinese Company”的代名词。&#xA;.cc域名简短，容易记忆，是比较稀有的双字母域名。&#xA;二、.cc域名价格表，cc域名注册与续费 根据不同的注册商，cc域名的注册价格和续费价格有所不同。以下是一些常见注册商的价格信息：&#xA;注册商 首年 次年 备注 阿里云 29元 75元 需要备案 腾讯云 28元 67元 需要备案 SpaceShip 22元 58元 免费WHOIS隐私，免费CDN加速 Cloudflare 56.7元 56.7元 免费WHOIS隐私，免费CDN加速和SSL，DNS服务器不可改 Namecheap 42元 92元 免费WHOIS隐私，免费CDN加速，第一年送SSL Godaddy 42元 113元 免费WHOIS隐私，续费较高 Namesilo 28元 70.8元 免费WHOIS隐私，可改DNS服务器 Dynadot 28元 70.8元 免费WHOIS隐私 西部数码 25元 68元 需要备案 备注：&#xA;由于续费价格相对较低，.cc域名在长期使用中具有较高的性价比。&#xA;链接：net域名价格列表&#xA;链接：最便宜的顶级域名xyz每年4.8元&#xA;三、免费的二级域名申请 域名后缀：&#xA;eu.org、nom.za、pp.ua、cloudns.org、cloudns.be、cloudns.ch、publicvm.com 、run.place&#xA;us.kg、freenom、dot.tk、biz.nf、infinityfree、000webhost、duckdns.org、freedns.afraid.org&#xA;备注：&#xA;免费的二级域名不稳定，用户只有使用权，没有所有权。&#xA;这意味着用户不能交易或转让这个域名，且注册方可以随时以各种理由收回域名‌。&#xA;有特定需求且感兴趣的可以自行搜索。&#xA;四、靠谱的cc域名注册网站 1、阿里云（国内）&#xA;阿里云需要备案和实名认证。阿里云拥有全球领先的云基础设施、超大规模普惠算力和先进的AI技术体系，连续19年蝉联域名市场NO.1，近1000万个域名在万网注册。是全球拥有数据中心最多、拥有CDN节点最多的云服务提供商之一。&#xA;2、腾讯云（国内）&#xA;腾讯云需要备案和实名认证。腾讯云提供涵盖云服务器、云数据库、CDN、云安全等多种产品，在中国大陆及海外多个地区设有数据中心，用户可以选择在靠近其客户的地域部署应用，从而降低延迟，提高访问速度。&#xA;3、Cloudflare（国外）</description>
     </item>
     <item>
       <title>net域名价格列表对比，net域名注册和续费是多少钱人民币</title>
-      <link>https://999338.xyz/posts/9b03/</link>
+      <link>http://localhost:1313/posts/9b03/</link>
       <pubDate>Wed, 04 Sep 2024 01:50:40 +0800</pubDate>
-      <guid>https://999338.xyz/posts/9b03/</guid>
+      <guid>http://localhost:1313/posts/9b03/</guid>
       <description>net是“网络network”的缩写。net域名是顶级域名，全球通用不受地域限制。net域名因其简短、易记且含义明确，在网民中具有很高的可识别性。截至2021年，它是继com、ru和org之后第四大最受欢迎的顶级域名。&#xA;net域名的价格大致在每年80元到200元之间。&#xA;例如，阿里云在2024年2月1日起对.net域名进行了价格调整，首年注册费用为93元，续费费用为99元，转入费用为90元。&#xA;如果注册商提供了增值服务（如域名隐私保护、域名转移等），这些也可能会增加域名的价格。&#xA;一、net域名价格列表对比 2024年9月 平台商 首年 次年 备注 阿里云 93元 99元 需要备案 腾讯云 90元 95元 需要备案 SpaceShip 80元 80元 免费WHOIS隐私，免费CDN加速 Cloudflare 84元 84元 免费WHOIS隐私，免费CDN加速和SSL，DNS服务器不可改 Namecheap 92元 114元 免费WHOIS隐私，免费CDN加速，第一年送SSL Godaddy 109元 179元 免费WHOIS隐私，续费较高 Namesilo 113元 113元 免费WHOIS隐私，可改DNS服务器 Dynadot 99元 99元 免费WHOIS隐私 西部数码 89元 98元 需要备案 注意：&#xA;Cloudflare修改DNS服务器需要收费。&#xA;在国外平台注册，需要有一定英语基础。&#xA;在国内平台注册，需要备案和实名认证。&#xA;链接： cc域名价格列表对比&#xA;链接： top域名价格列表对比&#xA;二、免费的二级域名 免费的二级域名如下，各位可以自行搜索并申请&#xA;eu.org、nom.za、pp.ua、cloudns.org、cloudns.be、cloudns.ch、publicvm.com 、run.place&#xA;us.kg、freenom、dot.tk、biz.nf、infinityfree、000webhost、duckdns.org、freedns.afraid.org&#xA;注意：免费二级域名可能会存在不稳定的情况，如频繁宕机、访问缓慢、被平台收回等问题。&#xA;三、便宜的顶级域名 域名 平台 首年 次年 xyz（6位数字） SpaceShip 4.8元 4.8元 top SpaceShip 7.</description>
     </item>
     <item>
       <title>48元十年域名注册，com多少钱，在哪里购买最便宜</title>
-      <link>https://999338.xyz/posts/8b02/</link>
+      <link>http://localhost:1313/posts/8b02/</link>
       <pubDate>Sun, 18 Aug 2024 12:13:36 +0800</pubDate>
-      <guid>https://999338.xyz/posts/8b02/</guid>
+      <guid>http://localhost:1313/posts/8b02/</guid>
       <description>一、最便宜的域名 1、目前市场上最便宜的域名包括.xyz和‌.top和.fun后缀的域名。‌购买这些域名时，可以选择如‌Spaceship和‌NameSilo平台，它们提供较低价格的（6-9位纯数字）域名。&#xA;例如，&#xA;Spaceship提供的6-9位纯数字.xyz域名为每年4.8元，十年为48元。&#xA;链接： xyz域名十年48元(Spaceship注册教程)&#xA;而NameSilo提供的相同类型的域名为每年7元，十年为70元。&#xA;2、此外还有一些其他便宜的域名选项。&#xA;例如‌，&#xA;阿里云的.top、‌.fun、‌.site、.space、.online 、.store、.tech、.website、.host、.press等后缀的域名，十年价格均为188元。‌&#xA;二、热门域名续费价格对比 热门域名&#xA;域名 阿里云 腾讯云 GoDaddy NameSilo cloudflare Spaceship com 90元 85元 159元 123元 74元 67元 net 99元 95元 179元 113元 84元 79元 top 32元 32元 52元 35元 35元 27元 xyz 88元 85元 159元 82元 79元 71元 域名批量查询工具&#xA;为了能选到一个好记并喜欢的域名，在购买域名之前，最好先用域名批量查询工具，可使用规则轻松扫描未注册域名。&#xA;三、免费二级域名 1、免费申请二级域名(eu.org)，审核长&#xA;2、免费申请二级域名(nom.za)&#xA;3、免费申请二级域名(pp.ua)，需绑卡&#xA;4、免费申请二级域名（cloudns.org、cloudns.be、cloudns.ch）&#xA;5、免费申请二级域名（publicvm.com 、236、run.place等五种）&#xA;（us.kg）（freenom）（dot.tk）（githu page、cloudflare page）&#xA;（biz.nf）（infinityfree）（000webhost）(duckdns.org) (freedns.afraid.org)&#xA;注意：免费域名基本上都是二级域名，容易出问题，还会随时随地回收没法长期用&#xA;四、知名的域名注册平台 1、阿里云（国内） 阿里云注册过程要求实名认证和ICP备案，确保符合中国的法律法规。阿里云作为国内最大的云服务商之一,在域名注册和管理方面提供安全可靠的服务。用户的隐私信息得到有效保护,域名解析服务稳定可靠。2013年,阿里云与万网合并为新的阿里云公司。阿里云的售后服务和工单流程也挺不错的，遇到问题和报错容易解决。阿里云提供的中文技术文档比英文容易看懂。&#xA;2、腾讯云（国内） 腾讯云注册过程要求实名认证和ICP备案，确保符合中国的法律法规。腾讯云和阿里云都是中国领先的云服务提供商，两家都是大公司大企业，国内注册可靠。腾讯云经常推出各种域名注册优惠活动，但要注意考虑次年续费价格。优惠活动可能会随时变化，具体的活动详情和使用条件请参考腾讯云官方网站或相关活动页面。&#xA;3、Godaddy（国外） Godaddy是一家成立于1997年的美国公司，有中文网站。GoDaddy是全球最大的域名注册商,截至2017年6月,在GoDaddy上注册的域名已经超过5,400万,名副其实的第一大域名注册服务公司。作为全球最大的域名注册商之一，GoDaddy提供广泛的服务，包括网站托管、域名购买、网站建设工具、电子商务解决方案以及网站安全服务。支持多种付款方式,如信用卡、PayPal等，建议使用独立账户注册,不要用微信等第三方登录。</description>
     </item>
     <item>
       <title>github page域名设置报错，Enforce HTTPS错误，不能勾选</title>
-      <link>https://999338.xyz/posts/8b01/</link>
+      <link>http://localhost:1313/posts/8b01/</link>
       <pubDate>Sun, 18 Aug 2024 09:47:47 +0800</pubDate>
-      <guid>https://999338.xyz/posts/8b01/</guid>
+      <guid>http://localhost:1313/posts/8b01/</guid>
       <description>Enforce HTTPS — Unavailable for your site because your domain is not properly configured to support HTTPS&#xA;第一种方法： 如果您使用的是Cloudflare，则需要禁用其代理功能&#xA;Cloudflare默认启用其HTTP/DNS代理功能，这意味着GitHub无法查看生成HTTPS证书所需的DNS记录。您需要为指向GitHub的任何DNS记录禁用此功能。&#xA;首先，请确保您已根据我们的帮助文档中的说明在Cloudflare中设置了DNS记录&#xA;要禁用Cloudflare的DNS/HTTP代理，您需要登录到您的Cloudflare帐户，导航到您的域名的DNS设置页面，然后单击与您的GitHub Pages域相关的任何DNS记录旁边的橙子云图标。&#xA;云图标应该会变成灰色，如果正确禁用。&#xA;配置证书后，您就可以通过选中“强制HTTPS”复选框来强制HTTPS。请记住，请求HTTPS证书可能需要一个小时左右的时间，所以如果您遵循这些步骤但仍然遇到问题，这通常就是原因。&#xA;如果您不确定如何解决这些SSL错误，请联系您的DNS提供商，或查看我们的自定义域故障排除指南。&#xA;免责声明：禁用HTTP/DNS代理可能会干扰其他Cloudflare服务。&#xA;如果您在您的网站上使用其他Cloudflare服务，我们无法保证这些服务将继续工作。要获得更多帮助，我建议联系Cloudflare的支持团队。&#xA;第二种方法： 从github page设置中删除自定义域，删除DNS设置，然后重新添加它。&#xA;这并没有立即工作，但九个小时后，证书颁发，我的网站开始通过HTTPS提供服务。&#xA;因此，我建议任何人有困难，首先尝试删除和重新添加他们的自定义域，如果他们还没有这样做。其次，可能需要一点耐心-这个过程可能需要几个小时。</description>
     </item>
   </channel>
